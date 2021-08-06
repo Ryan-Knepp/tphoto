@@ -1,0 +1,22 @@
+{
+  "name": "tphoto",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "dev": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-contentful": "^0.5.0",
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "gridsome-plugin-tailwindcss2": "^1.0.3",
+    "gridsome-plugin-typescript": "^0.4.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "~2.1.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5"
+  }
+}
