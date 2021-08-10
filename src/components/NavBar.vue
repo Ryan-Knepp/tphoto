@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex justify-between my-4 pb-4 border-b divide-x divide-t-dark-pink border-t-dark-pink"
+    class="max-w-screen-xl flex justify-between mx-auto my-4 pb-4 border-b divide-x divide-t-dark-pink border-t-dark-pink"
   >
     <g-link to="/" class="mx-auto">
       <g-image src="../assets/images/logo.png" width="64" height="64" />
@@ -17,7 +17,7 @@
           <g-link to="/portfolio/">Portfolio</g-link>
         </li>
         <li class=" mx-2 p-4">
-          <g-link to="/investment/">Investment</g-link>
+          <g-link to="/services/">Investment</g-link>
         </li>
         <li class="mx-2 p-4">
           <g-link to="/blog/">Blog</g-link>
