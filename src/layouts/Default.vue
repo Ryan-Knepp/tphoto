@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto sm:w-full sm:px-2 lg:w-3/4 lg:px-0">
+  <div class="max-w-screen-2xl mx-auto sm:w-full sm:px-2 xl:w-3/4 xl:px-0">
     <NavBar />
     <slot />
   </div>
