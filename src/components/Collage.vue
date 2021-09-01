@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-screen-xl mx-auto grid grid-cols-12 grid-rows-6">
+  <div class="max-w-screen-xl md:mx-auto grid grid-cols-12 grid-rows-6">
     <div
-      class="col-start-11 col-end-13 row-start-1 row-end-4 z-30 transform translate-y-6"
+      class="col-start-11 col-end-13 row-start-1 row-end-4 z-30 transform translate-y-6 -translate-x-4"
     >
       <g-image
         src="../assets/images/services/senior.jpg"
@@ -10,7 +10,7 @@
       />
     </div>
     <div
-      class="col-start-1 col-end-3 row-start-1 row-end-3 z-30 transform translate-x-16 translate-y-14"
+      class="col-start-1 col-end-3 row-start-1 row-end-3 z-30 transform translate-x-8 translate-y-6 md:translate-x-16 md:translate-y-14"
     >
       <g-image
         src="../assets/images/services/fun_2.jpg"
@@ -34,7 +34,9 @@
     <div class="col-start-3 col-end-12 row-start-2 row-end-6 z-0">
       <g-image src="../assets/images/services/center.jpg" alt="" class="" />
     </div>
-    <div class="col-start-11 col-end-13 row-start-5 row-end-7 z-30">
+    <div
+      class="col-start-11 col-end-13 row-start-5 row-end-7 z-30 transform -translate-x-4 translate-y-8"
+    >
       <g-image
         src="../assets/images/services/newborn_circle_2.jpg"
         alt=""
@@ -63,7 +65,7 @@
       <g-image
         src="../assets/images/services/fun_rectangle.jpg"
         alt=""
-        class="border-8 border-white"
+        class="border-4 md:border-8 border-white"
         width="450"
         height="250"
       />
@@ -81,6 +83,11 @@ export default {
 
 <style scoped>
 .offset-border {
-  box-shadow: 10px 10px 0;
+  box-shadow: 4px 4px 0;
+}
+@media (min-width: 768px) {
+  .offset-border {
+    box-shadow: 10px 10px 0;
+  }
 }
 </style>
