@@ -1,9 +1,9 @@
 <template>
   <footer class="bg-t-dark-pink text-t-white pt-6">
     <div
-      class="max-w-screen-2xl mx-auto sm:w-full sm:px-2 xl:w-3/4 xl:px-0 flex flex-col md:flex-row justify-center divide-x-2 dividie-t-white"
+      class="max-w-screen-2xl mx-auto sm:w-full sm:px-2 xl:w-3/4 xl:px-0 flex flex-col md:flex-row justify-center md:divide-x-2 md:dividie-t-white"
     >
-      <ul class="flex gap-4 items-center pr-4">
+      <ul class="flex gap-4 items-center pr-4 mx-auto md:mx-0">
         <li class="py-2">
           <a
             href="https://www.facebook.com/tphotography"
@@ -35,7 +35,7 @@
           </a>
         </li>
       </ul>
-      <div class="pl-4 flex gap-4">
+      <div class="pl-4 flex gap-4 mx-auto md:mx-0">
         <ul class="flex flex-col text-md uppercase">
           <li class="py-2">
             <g-link to="/">Home</g-link>
@@ -62,7 +62,7 @@
         </ul>
       </div>
     </div>
-    <p class="flex justify-center mt-4">
+    <p class="flex justify-center mt-4 text-sm md:text-base">
       © 2021 Taryn Knepp | All Rights Reserved | Site By Ryan Knepp
     </p>
   </footer>
