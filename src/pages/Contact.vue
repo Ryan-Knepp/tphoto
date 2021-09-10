@@ -12,6 +12,7 @@ export default {
   mounted: function() {
     createWidget("MVIeXb25", {
       container: this.$refs.contactForm,
+      inlineOnMobile: true,
     });
   },
   methods: {
