@@ -62,7 +62,7 @@
         </ul>
       </div>
     </div>
-    <p class="flex justify-center mt-4 text-sm md:text-base">
+    <p class="flex justify-center mt-4 text-xs sm:text-sm md:text-base">
       © 2021 Taryn Knepp | All Rights Reserved | Site By Ryan Knepp
     </p>
   </footer>

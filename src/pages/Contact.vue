@@ -1,9 +1,29 @@
 <template>
   <Layout>
-    <div></div>
+    <div ref="contactForm" class="mb-8 mx-2 xl:mx-0 contact-form" />
   </Layout>
 </template>
 
-<script></script>
+<script>
+import { createWidget } from "@typeform/embed";
+import "@typeform/embed/build/css/widget.css";
 
-<style scoped></style>
+export default {
+  mounted: function() {
+    createWidget("MVIeXb25", {
+      container: this.$refs.contactForm,
+    });
+  },
+  methods: {
+    toggleSlider: function() {
+      this.slider.toggle();
+    },
+  },
+};
+</script>
+
+<style scoped>
+.contact-form {
+  height: calc(100vh - 200px);
+}
+</style>
