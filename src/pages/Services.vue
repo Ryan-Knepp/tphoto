@@ -5,7 +5,7 @@
       <section class="flex bg-t-dark-pink self-stretch shadow-lg sm:rounded">
         <div class="my-auto">
           <g-image
-            src="../assets/packages/series.jpg"
+            src="../assets/images/packages/series.jpg"
             class="image sm:rounded-l"
           />
         </div>
@@ -33,7 +33,7 @@
       <section class="flex bg-t-pink self-stretch shadow-lg sm:rounded">
         <div class="my-auto">
           <g-image
-            src="../assets/packages/portrait.jpg"
+            src="../assets/images/packages/portrait.jpg"
             class="image sm:rounded-l"
           />
         </div>
@@ -61,7 +61,7 @@
       <section class="flex bg-t-grey self-stretch shadow-lg sm:rounded">
         <div class="my-auto">
           <g-image
-            src="../assets/packages/newborn.jpg"
+            src="../assets/images/packages/newborn.jpg"
             class="image sm:rounded-l"
           />
         </div>
@@ -89,7 +89,7 @@
       <section class="flex bg-t-white self-stretch shadow-lg sm:rounded">
         <div class="my-auto">
           <g-image
-            src="../assets/packages/senior.jpg"
+            src="../assets/images/packages/senior.jpg"
             class="image sm:rounded-l"
           />
         </div>
