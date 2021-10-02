@@ -1,33 +1,9 @@
 <template>
-  <div class="mx-auto w-3/4 my-12">
-    <swiper class="swiper h-auto" :options="swiperOption" :loop="true">
+  <div class="mx-auto my-12">
+    <swiper class="swiper" :options="swiperOption" :loop="true">
       <swiper-slide v-for="image in $static.images.portfolioPictures" :key="image.id">
         <g-image :src="image.file.url" />
       </swiper-slide>
-      <!-- <swiper-slide
-        ><g-image
-          src="../assets/images/carousel/growingup/growingup001.jpg"
-          height="500"
-          class="mx-auto"
-          fit="inside"
-        />
-      </swiper-slide>
-      <swiper-slide
-        ><g-image
-          src="../assets/images/carousel/growingup/growingup002.jpg"
-          height="500"
-          class="mx-auto"
-          fit="inside"
-        />
-      </swiper-slide>
-      <swiper-slide
-        ><g-image
-          src="../assets/images/carousel/growingup/growingup003.jpg"
-          height="500"
-          class="mx-auto"
-          fit="inside"
-        />
-      </swiper-slide> -->
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
     </swiper>

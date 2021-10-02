@@ -1,8 +1,10 @@
 <template>
   <div class="mb-4 flex flex-col justify-center">
-    <kids-swiper v-if="selected === 'kids'" />
-    <family-swiper v-else-if="selected === 'family'" />
-    <littles-swiper v-else />
+    <t-modal ref='modal'>
+      <kids-swiper v-if="selected === 'kids'" />
+      <family-swiper v-else-if="selected === 'family'" />
+      <littles-swiper v-else />
+    </t-modal>
     <div
       class="flex justify-center p-1 space-x-4 bg-t-dark-pink rounded-xl md:w-1/2 self-center"
     >
@@ -45,8 +47,11 @@ import LittlesSwiper from "./LittlesSwiper.vue";
 import KidsSwiper from "./KidsSwiper.vue";
 import FamilySwiper from "./FamilySwiper.vue";
 
+import VueTailwind from 'vue-tailwind'
+import TModal from 'vue-tailwind/dist/t-modal';
+
 export default {
-  components: { LittlesSwiper, KidsSwiper, FamilySwiper },
+  components: { TModal, LittlesSwiper, KidsSwiper, FamilySwiper },
   data() {
     return {
       selected: "littles",
@@ -55,6 +60,7 @@ export default {
   methods: {
     selectSwiper(key) {
       this.selected = key;
+      this.$refs.modal.show();
     },
   },
 };
