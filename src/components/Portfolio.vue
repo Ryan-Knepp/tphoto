@@ -1,11 +1,6 @@
 <template>
   <section class="my-4">
-    <light-box
-      :media="selectedGroup"
-      ref="lightbox"
-      :showLightBox="false"
-      :showThumbs="false"
-    />
+    <h2 class="text-lg transform translate-y-2 title">T's Work</h2>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       <div v-for="group in $static.groups.edges" :key="group.node.id">
         <button @click="selectSwiper(group.node.id)" class="bg-t-pink text-lg">
@@ -17,6 +12,12 @@
         </button>
       </div>
     </div>
+    <light-box
+      :media="selectedGroup"
+      ref="lightbox"
+      :showLightBox="false"
+      :showThumbs="false"
+    />
   </section>
 </template>
 
@@ -80,4 +81,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.title {
+  font-family: "Billow";
+}
+</style>
