@@ -1,66 +1,80 @@
 <template>
-  <div class="mb-4 flex flex-col justify-center">
-    <t-modal ref='modal'>
-      <kids-swiper v-if="selected === 'kids'" />
-      <family-swiper v-else-if="selected === 'family'" />
-      <littles-swiper v-else />
-    </t-modal>
-    <div
-      class="flex justify-center p-1 space-x-4 bg-t-dark-pink rounded-xl md:w-1/2 self-center"
-    >
-      <button
-        @click="selectSwiper('littles')"
-        :class="
-          `py-2 px-4 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75 ${
-            selected === 'littles' ? 'bg-t-pink ' : 'hover:bg-t-pink'
-          }  `
-        "
-      >
-        Newborns
-      </button>
-      <button
-        @click="selectSwiper('kids')"
-        :class="
-          `py-2 px-4 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75 ${
-            selected === 'kids' ? 'bg-t-pink ' : 'hover:bg-t-pink'
-          }  `
-        "
-      >
-        Kids
-      </button>
-      <button
-        @click="selectSwiper('family')"
-        :class="
-          `py-2 px-4 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75 ${
-            selected === 'family' ? 'bg-t-pink ' : 'hover:bg-t-pink'
-          }  `
-        "
-      >
-        Family
-      </button>
+  <section class="my-4">
+    <light-box
+      :media="selectedGroup"
+      ref="lightbox"
+      :showLightBox="false"
+      :showThumbs="false"
+    />
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <div v-for="group in $static.groups.edges" :key="group.node.id">
+        <button @click="selectSwiper(group.node.id)" class="bg-t-pink text-lg">
+          <g-image
+            :src="group.node.portfolioPictures[0].file.url"
+            :alt="group.node.portfolioPictures[0].description"
+          />
+          {{ group.node.portfolioName }}
+        </button>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<script>
-import LittlesSwiper from "./LittlesSwiper.vue";
-import KidsSwiper from "./KidsSwiper.vue";
-import FamilySwiper from "./FamilySwiper.vue";
+<static-query>
+query {
+  groups: allContentfulPortfolioGroup {
+    edges {
+      node {
+        id
+        portfolioName
+        portfolioPictures {
+          id
+          title
+          description
+          file {
+            url
+          }
+        }
+      }
+    }
+  }
+}
+</static-query>
 
-import VueTailwind from 'vue-tailwind'
-import TModal from 'vue-tailwind/dist/t-modal';
+<script>
+import LightBox from "vue-image-lightbox";
+import "vue-image-lightbox/dist/vue-image-lightbox.min.css";
 
 export default {
-  components: { TModal, LittlesSwiper, KidsSwiper, FamilySwiper },
+  components: { LightBox },
   data() {
     return {
-      selected: "littles",
+      swiperOption: {
+        // loop: true,
+        autoHeight: true,
+        calculateHeight: true,
+        preloadImages: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
+      selectedGroup: [],
     };
   },
   methods: {
     selectSwiper(key) {
-      this.selected = key;
-      this.$refs.modal.show();
+      //
+      const group = this.$static.groups.edges.find(
+        (edge) => edge.node.id === key
+      );
+      this.selectedGroup = group.node.portfolioPictures.map((picture) => {
+        return {
+          src: picture.file.url,
+          caption: picture.description,
+        };
+      });
+      this.$refs.lightbox.showImage(0);
     },
   },
 };
