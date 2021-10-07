@@ -931,6 +931,26 @@
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-13.4.0.tgz#a59c311ebd1b801ee00edbc08663c8d78da26171"
   integrity sha512-YPdYqGmWiGAood7ri2BUXfPQKNthkQYV1rmQdaq4UAxWK5NLB5NXckaUYLbohqhHKtrq4tnfzVn+ePWID7Dzbg==
 
+"@fontsource/give-you-glory@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/give-you-glory/-/give-you-glory-4.5.0.tgz#78d50df71eb1da9922b2686794bbc56edf743b4b"
+  integrity sha512-5Pa/aCZZXq82wj0ClASS1T8PDnwLm7lJppvcBxORidVXuxw7wORywiUGLKu7TFrc3izW67JezVKO90L0wmGxbA==
+
+"@fontsource/poiret-one@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/poiret-one/-/poiret-one-4.5.0.tgz#78ffaf68c07f8edf53dfa4dc2378c608940c7d08"
+  integrity sha512-Q4FW7ce2odhfM664wMiTC077WAZ1YmZBIYSNXEWKT/1TyHxcckqYeZN/hfRXu29Abd8jDmclmSU2VsokbUXs8A==
+
+"@fontsource/raleway@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.0.tgz#d5c464abe655d2e2cb134c503db455b7af6c03a6"
+  integrity sha512-Rzj90wbZQnNzazqzoiu5HzMEMdqMJLUVFOo699sinTXrZRm1aB5iX2HTiK2VlPnH4M6u8yYnJ7CebOyamfWlqw==
+
+"@fontsource/special-elite@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/special-elite/-/special-elite-4.5.0.tgz#9519912981e44f069d0e5fc29a9637be72ecad93"
+  integrity sha512-fWc4UQ9MsDqU21C1dSkTHOqkUUAYD3aIyRAm56ZTqlvOsLnuj3kIXika6citZbTmyQ5YVpFCwy/+/VW9DWEV1w==
+
 "@fullhuman/postcss-purgecss@^3.1.3":
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-3.1.3.tgz#47af7b87c9bfb3de4bc94a38f875b928fffdf339"

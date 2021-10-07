@@ -7,6 +7,10 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@fontsource/give-you-glory": "^4.5.0",
+    "@fontsource/poiret-one": "^4.5.0",
+    "@fontsource/raleway": "^4.5.0",
+    "@fontsource/special-elite": "^4.5.0",
     "@gridsome/source-contentful": "^0.5.0",
     "@typeform/embed": "^1.18.1",
     "gridsome": "^0.7.0",

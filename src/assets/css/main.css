@@ -1,11 +1,5 @@
 @tailwind base;
 @tailwind components;
-
-@font-face {
-  font-family: "Billow";
-  src: local("Billow") url("/assets/fonts/Billow.ttf") format("truetype");
-}
-
 @tailwind utilities;
 
 /* * {

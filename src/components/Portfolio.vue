@@ -1,6 +1,9 @@
 <template>
   <section class="my-4">
-    <h2 class="text-lg transform translate-y-2 title">T's Work</h2>
+    <h2 class="text-4xl transform translate-y-4 title">
+      T's Work
+    </h2>
+
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       <div v-for="group in $static.groups.edges" :key="group.node.id">
         <button @click="selectSwiper(group.node.id)" class="bg-t-pink text-lg">
@@ -83,6 +86,6 @@ export default {
 
 <style scoped>
 .title {
-  font-family: "Billow";
+  font-family: "Give You Glory";
 }
 </style>
