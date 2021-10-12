@@ -6,13 +6,15 @@
       excepturi labore tempore expedita, et iste tenetur suscipit explicabo!
       Dolores, aperiam non officia eos quod asperiores
     </p>
+    <Testimonials />
     <Portfolio />
   </Layout>
 </template>
 
 <script>
 import Portfolio from "../components/Portfolio.vue";
+import Testimonials from "../components/Testimonials.vue";
 export default {
-  components: { Portfolio },
+  components: { Portfolio, Testimonials },
 };
 </script>
