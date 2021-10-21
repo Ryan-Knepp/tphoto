@@ -1,135 +1,82 @@
 <template>
-  <section>
-    <div v-if="index === 0" class="relative">
+  <section class="">
+    <div class="relative">
       <g-image
+        v-if="index === 0"
         src="../assets/images/testimonial001.jpg"
-        class="md:h-96 object-cover"
+        class="container object-cover"
       ></g-image>
-      <div
-        class="flex flex-col justify-center bg-t-dark-pink md:absolute md:top-8 md:right-8 md:bottom-8 md:w-1/3 p-8 mx-4 md:mx-0 md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0"
-      >
-        <h2 class="title text-3xl text-center text-t-white">
-          {{ this.testimonials[0].title }}
-        </h2>
-        <p class="pt-2 text-lg md:text-base lg:text-lg">
-          {{ this.testimonials[0].quote }}
-        </p>
-        <button @click="prevTestimonial()">Prev</button>
-        <button @click="nextTestimonial()">Next</button>
-      </div>
-    </div>
-    <div v-else-if="index === 1" class="relative">
       <g-image
+        v-else-if="index === 1"
         src="../assets/images/testimonial002.jpg"
-        class="md:h-96 object-cover"
+        class="container object-cover pos-20"
       ></g-image>
-      <div
-        class="flex flex-col justify-center bg-t-dark-pink md:absolute md:top-8 md:right-8 md:bottom-8 md:w-1/3 p-8 mx-4 md:mx-0 md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0"
-      >
-        <h2 class="title text-3xl text-center text-t-white">
-          {{ this.testimonials[1].title }}
-        </h2>
-        <p class="pt-2 text-lg md:text-base lg:text-lg">
-          {{ this.testimonials[1].quote }}
-        </p>
-        <button @click="prevTestimonial()">Prev</button>
-        <button @click="nextTestimonial()">Next</button>
-      </div>
-    </div>
-    <div v-else-if="index === 2" class="relative">
       <g-image
+        v-else-if="index === 2"
         src="../assets/images/testimonial003.jpg"
-        class="md:h-96 object-cover"
+        class="container object-cover"
       ></g-image>
-      <div
-        class="flex flex-col justify-center bg-t-dark-pink md:absolute md:top-8 md:right-8 md:bottom-8 md:w-1/3 p-8 mx-4 md:mx-0 md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0"
-      >
-        <h2 class="title text-3xl text-center text-t-white">
-          {{ this.testimonials[2].title }}
-        </h2>
-        <p class="pt-2 text-lg md:text-base lg:text-lg">
-          {{ this.testimonials[2].quote }}
-        </p>
-        <button @click="prevTestimonial()">Prev</button>
-        <button @click="nextTestimonial()">Next</button>
-      </div>
-    </div>
-    <div v-else-if="index === 3" class="relative">
       <g-image
+        v-else-if="index === 3"
         src="../assets/images/testimonial004.jpg"
-        class="md:h-96 object-cover"
+        class="container object-cover"
       ></g-image>
-      <div
-        class="flex flex-col justify-center bg-t-dark-pink md:absolute md:top-8 md:right-8 md:bottom-8 md:w-1/3 p-8 mx-4 md:mx-0 md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0"
-      >
-        <h2 class="title text-3xl text-center text-t-white">
-          {{ this.testimonials[3].title }}
-        </h2>
-        <p class="pt-2 text-lg md:text-base lg:text-lg">
-          {{ this.testimonials[3].quote }}
-        </p>
-        <button @click="prevTestimonial()">Prev</button>
-        <button @click="nextTestimonial()">Next</button>
-      </div>
-    </div>
-    <div v-else-if="index === 4" class="relative">
       <g-image
+        v-else-if="index === 4"
         src="../assets/images/testimonial005.jpg"
-        class="md:h-96 object-cover"
+        class="container object-cover"
       ></g-image>
-      <div
-        class="flex flex-col justify-center bg-t-dark-pink md:absolute md:top-8 md:right-8 md:bottom-8 md:w-1/3 p-8 mx-4 md:mx-0 md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0"
-      >
-        <h2 class="title text-3xl text-center text-t-white">
-          {{ this.testimonials[4].title }}
-        </h2>
-        <p class="pt-2 text-lg md:text-base lg:text-lg">
-          {{ this.testimonials[4].quote }}
-        </p>
-        <button @click="prevTestimonial()">Prev</button>
-        <button @click="nextTestimonial()">Next</button>
-      </div>
-    </div>
-    <div v-else-if="index === 5" class="relative">
       <g-image
+        v-else-if="index === 5"
         src="../assets/images/testimonial006.jpg"
-        class="md:h-96 object-cover"
+        class="container object-cover"
       ></g-image>
-      <div
-        class="flex flex-col justify-center bg-t-dark-pink md:absolute md:top-8 md:right-8 md:bottom-8 md:w-1/3 p-8 mx-4 md:mx-0 md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0"
-      >
-        <h2 class="title text-3xl text-center text-t-white">
-          {{ this.testimonials[5].title }}
-        </h2>
-        <p class="pt-2 text-lg md:text-base lg:text-lg">
-          {{ this.testimonials[5].quote }}
-        </p>
-        <button @click="prevTestimonial()">Prev</button>
-        <button @click="nextTestimonial()">Next</button>
-      </div>
-    </div>
-    <div v-else-if="index === 6" class="relative">
       <g-image
+        v-else-if="index === 6"
         src="../assets/images/testimonial007.jpg"
-        class="md:h-96 object-cover"
+        class="container object-cover"
       ></g-image>
       <div
-        class="flex flex-col justify-center bg-t-dark-pink md:absolute md:top-8 md:right-8 md:bottom-8 md:w-1/3 p-8 mx-4 md:mx-0 md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0"
+        :class="
+          `flex flex-col justify-center bg-t-dark-pink md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0 md:absolute ${
+            this.testimonials[this.index].positioning
+          }`
+        "
       >
         <h2 class="title text-3xl text-center text-t-white">
-          {{ this.testimonials[6].title }}
+          {{ this.testimonials[this.index].title }}
         </h2>
         <p class="pt-2 text-lg md:text-base lg:text-lg">
-          {{ this.testimonials[6].quote }}
+          {{ this.testimonials[this.index].quote }}
         </p>
-        <button @click="prevTestimonial()">Prev</button>
-        <button @click="nextTestimonial()">Next</button>
+        <button
+          class="absolute left-0 inset-y-0 focus:outline-none"
+          @click="prevTestimonial()"
+        >
+          <img
+            class="m-2 w-4 h-4 text-white"
+            src="../assets/icons/chevron-left.svg"
+          />
+        </button>
+        <button
+          class="absolute right-0 inset-y-0 focus:outline-none"
+          @click="nextTestimonial()"
+        >
+          <img
+            class="m-2 w-4 h-4 text-white"
+            src="../assets/icons/chevron-right.svg"
+          />
+        </button>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+const STANDARD_POSITIONING_RIGHT =
+  "md:top-4 md:right-6 md:bottom-4 md:w-1/3 p-8 mx-4 md:mx-0";
+const STANDARD_POSITIONING_LEFT =
+  "md:top-4 md:left-6 md:bottom-4 md:w-1/3 p-8 mx-4 md:mx-0";
 export default {
   data: function() {
     return {
@@ -140,30 +87,56 @@ export default {
           quote: `"You've been PERFECTLY captioning our family since 5 days after Jean was
           born!!! God has BLESSED US to have your dear friendship! THESE ARE SO
           AMAZING! TIMELESS! I CAN'T EVEN FIND WORDS! OHHH MY GOODNESS!!!"`,
+          positioning: STANDARD_POSITIONING_RIGHT,
         },
         {
           title: "Shelby Says",
-          quote: `"Taryn Knepp did it again! She captured Rylee’s personality so perfectly in these photos! You would never be able to tell that she was sick and upset during the whole shoot!! Taryn worked her magic like she always does I couldn’t love these anymore. I can’t believe my baby turned ONE almost two months ago. Thank you so much Taryn for capturing our sweet, sometimes shy but typically spunky Rylee Anne."`,
+          quote: `"Taryn Knepp did it again! She captured Rylee’s personality so perfectly 
+          in these photos! You would never be able to tell that she was sick and upset during 
+          the whole shoot!! Taryn worked her magic like she always does I couldn’t love these 
+          anymore. I can’t believe my baby turned ONE almost two months ago. Thank you so much 
+          Taryn for capturing our sweet, sometimes shy but typically spunky Rylee Anne."`,
+          positioning: STANDARD_POSITIONING_LEFT,
         },
         {
           title: "Heather Says",
-          quote: `"I wanted professional quality pictures to print and have as keepsakes. Taryn was extremely patient working with some slightly uncooperative toddler boys. We got some amazing shots that capture their unique, true personalities!"`,
+          quote: `"I wanted professional quality pictures to print and have as keepsakes. Taryn 
+          was extremely patient working with some slightly uncooperative toddler boys. We got some 
+          amazing shots that capture their unique, true personalities!"`,
+          positioning: STANDARD_POSITIONING_RIGHT,
         },
         {
           title: "Tonya Says",
-          quote: `"I like to have yearly professional captures of my children-- portraits to display in my home and a nice family picture, too. One of the biggest struggles with getting pictures taken is wanting my kids to act natural in front of the camera. Taryn always does such a great job of capturing the essence of each child. Especially when we’ve done senior pictures! She puts my kids at ease and is able to snap some creative, candid shots."`,
+          quote: `"I like to have yearly professional captures of my children-- portraits to display 
+          in my home and a nice family picture, too. One of the biggest struggles with getting pictures 
+          taken is wanting my kids to act natural in front of the camera. Taryn always does such a great 
+          job of capturing the essence of each child. Especially when we’ve done senior pictures! She 
+          puts my kids at ease and is able to snap some creative, candid shots."`,
+          positioning: STANDARD_POSITIONING_RIGHT,
         },
         {
           title: "Natalie Says",
-          quote: `"I wanted pictures that looked professional but natural. A true snapshot of life, full of color. Taryn took our wedding photos, so I knew I loved her photography and editing style. After she did the first session with our oldest, I knew she would do every session from then on! Taking pictures of kids is stressful, period-- LOL. But she makes it as effortless and fun as she can! I’m always amazed at how quickly she picks and lays out the props and then takes the most breathtaking pictures! I am so, so thankful that Taryn has used her gift of art, color, and photography to capture the most precious moments of our family’s lives!"`,
+          quote: `"I wanted pictures that looked professional but natural. A true snapshot of life, full 
+          of color. Taryn took our wedding photos, so I knew I loved her photography and editing style. 
+          After she did the first session with our oldest, I knew she would do every session from then 
+          on! Taking pictures of kids is stressful, period-- LOL. But she makes it as effortless and fun 
+          as she can! I’m always amazed at how quickly she picks and lays out the props and then takes 
+          the most breathtaking pictures! I am so, so thankful that Taryn has used her gift of art, color, 
+          and photography to capture the most precious moments of our family’s lives!"`,
+          positioning: STANDARD_POSITIONING_RIGHT,
         },
         {
           title: "Alisa Says",
-          quote: `"I wanted some graduation pictures of my daughter. We were able to get good pictures right at our house! Taryn made my daughter feel comfortable and captured some really great shots!"`,
+          quote: `"I wanted some graduation pictures of my daughter. We were able to get good pictures 
+          right at our house! Taryn made my daughter feel comfortable and captured some really great shots!"`,
+          positioning: STANDARD_POSITIONING_RIGHT,
         },
         {
           title: "Jody Says",
-          quote: `"The struggle I was facing before hiring a photographer--  fitting it in amidst a busy schedule & family attitudes. However, I wanted to update our family photo, and the result was a wonderful photography experience. Taryn does such great work!"`,
+          quote: `"The struggle I was facing before hiring a photographer--  fitting it in amidst a 
+          busy schedule & family attitudes. However, I wanted to update our family photo, and the result 
+          was a wonderful photography experience. Taryn does such great work!"`,
+          positioning: STANDARD_POSITIONING_RIGHT,
         },
       ],
     };
@@ -188,7 +161,13 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  height: 500px;
+}
 .title {
   font-family: "Give You Glory";
+}
+.pos-20 {
+  object-position: 0 20%;
 }
 </style>
