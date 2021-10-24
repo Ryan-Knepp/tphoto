@@ -46,11 +46,11 @@ query {
 </static-query>
 
 <script>
-import LightBox from "vue-image-lightbox";
+// import LightBox from "vue-image-lightbox";
 import "vue-image-lightbox/dist/vue-image-lightbox.min.css";
 
 export default {
-  components: { LightBox },
+  components: {},
   data() {
     return {
       swiperOption: {
@@ -64,6 +64,7 @@ export default {
         },
       },
       selectedGroup: [],
+      lightboxReady: false,
     };
   },
   methods: {
@@ -80,6 +81,9 @@ export default {
       });
       this.$refs.lightbox.showImage(0);
     },
+  },
+  mounted: async function() {
+    console.log("In mounted");
   },
 };
 </script>

@@ -8,4 +8,9 @@ import "@fontsource/special-elite";
 export default function(Vue) {
   Vue.component("Layout", DefaultLayout);
   Vue.use(VueLazyLoad);
+
+  if (process.isClient) {
+    const LightBox = require("vue-image-lightbox").default;
+    Vue.component("LightBox", LightBox);
+  }
 }
