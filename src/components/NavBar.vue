@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-2xl mx-auto sm:w-full sm:px-2 xl:w-10/12 xl:px-0">
+  <div class="main-container">
     <header
       class="hidden lg:flex justify-between mx-auto my-4 pb-4 border-b divide-x divide-t-dark-pink border-t-dark-pink"
     >

@@ -5,3 +5,7 @@
 /* * {
   border: 2px solid red;
 } */
+
+.main-container {
+  @apply max-w-screen-2xl mx-auto sm:w-full sm:px-2 xl:w-10/12 xl:px-0;
+}

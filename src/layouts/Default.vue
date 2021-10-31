@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <NavBar />
-    <main class="max-w-screen-2xl mx-auto sm:w-full sm:px-2 xl:w-10/12 xl:px-0">
+    <main class="">
       <slot />
     </main>
     <Footer />

@@ -1,5 +1,5 @@
 <template>
-  <section class="my-4">
+  <section class="main-container my-4">
     <h2 class="text-4xl transform translate-y-4 title">
       T's Work
     </h2>
