@@ -1,44 +1,44 @@
 <template>
-  <section class="">
+  <section class="testimonial-wrapper my-4">
     <div class="relative">
       <g-image
         v-if="index === 0"
         src="../assets/images/testimonial001.jpg"
-        class="container object-cover"
+        class="image object-cover"
       ></g-image>
       <g-image
         v-else-if="index === 1"
         src="../assets/images/testimonial002.jpg"
-        class="container object-cover pos-20"
+        class="image object-cover"
       ></g-image>
       <g-image
         v-else-if="index === 2"
         src="../assets/images/testimonial003.jpg"
-        class="container object-cover"
+        class="image object-cover"
       ></g-image>
       <g-image
         v-else-if="index === 3"
         src="../assets/images/testimonial004.jpg"
-        class="container object-cover"
+        class="image object-cover"
       ></g-image>
       <g-image
         v-else-if="index === 4"
         src="../assets/images/testimonial005.jpg"
-        class="container object-cover"
+        class="image object-cover"
       ></g-image>
       <g-image
         v-else-if="index === 5"
         src="../assets/images/testimonial006.jpg"
-        class="container object-cover"
+        class="image object-cover"
       ></g-image>
       <g-image
         v-else-if="index === 6"
         src="../assets/images/testimonial007.jpg"
-        class="container object-cover"
+        class="image object-cover"
       ></g-image>
       <div
         :class="
-          `flex flex-col justify-center bg-t-dark-pink md:bg-opacity-90 transform -translate-y-12 md:-translate-y-0 md:absolute ${
+          `flex flex-col justify-center bg-t-dark-pink lg:bg-opacity-90 transform -translate-y-12 lg:-translate-y-0 lg:absolute ${
             this.testimonials[this.index].positioning
           }`
         "
@@ -46,7 +46,7 @@
         <h2 class="title text-3xl text-center text-t-white">
           {{ this.testimonials[this.index].title }}
         </h2>
-        <p class="pt-2 text-lg md:text-base lg:text-lg">
+        <p :class="`pt-2 px-2 ${this.testimonials[this.index].textSizing} `">
           {{ this.testimonials[this.index].quote }}
         </p>
         <button
@@ -54,7 +54,7 @@
           @click="prevTestimonial()"
         >
           <img
-            class="m-2 w-4 h-4 text-white"
+            class="m-2 w-6 h-6 text-white"
             src="../assets/icons/chevron-left.svg"
           />
         </button>
@@ -63,7 +63,7 @@
           @click="nextTestimonial()"
         >
           <img
-            class="m-2 w-4 h-4 text-white"
+            class="m-2 w-6 h-6 text-white"
             src="../assets/icons/chevron-right.svg"
           />
         </button>
@@ -74,9 +74,11 @@
 
 <script>
 const STANDARD_POSITIONING_RIGHT =
-  "md:top-4 md:right-6 md:bottom-4 md:w-1/3 p-8 mx-4 md:mx-0";
+  "lg:top-4 lg:right-2 xl:right-6 lg:bottom-4 lg:w-1/3 p-8 mx-4 lg:mx-0";
 const STANDARD_POSITIONING_LEFT =
-  "md:top-4 md:left-6 md:bottom-4 md:w-1/3 p-8 mx-4 md:mx-0";
+  "lg:top-4 lg:left-6 lg:bottom-4 lg:w-1/3 p-8 mx-4 lg:mx-0";
+
+const DEFAULT_TEXT_SIZING = "text-lg md:text-base lg:text-lg";
 export default {
   data: function() {
     return {
@@ -88,6 +90,7 @@ export default {
           born!!! God has BLESSED US to have your dear friendship! THESE ARE SO
           AMAZING! TIMELESS! I CAN'T EVEN FIND WORDS! OHHH MY GOODNESS!!!"`,
           positioning: STANDARD_POSITIONING_RIGHT,
+          textSizing: DEFAULT_TEXT_SIZING,
         },
         {
           title: "Shelby Says",
@@ -96,7 +99,8 @@ export default {
           the whole shoot!! Taryn worked her magic like she always does I couldn’t love these 
           anymore. I can’t believe my baby turned ONE almost two months ago. Thank you so much 
           Taryn for capturing our sweet, sometimes shy but typically spunky Rylee Anne."`,
-          positioning: STANDARD_POSITIONING_LEFT,
+          positioning: STANDARD_POSITIONING_RIGHT,
+          textSizing: DEFAULT_TEXT_SIZING,
         },
         {
           title: "Heather Says",
@@ -104,6 +108,7 @@ export default {
           was extremely patient working with some slightly uncooperative toddler boys. We got some 
           amazing shots that capture their unique, true personalities!"`,
           positioning: STANDARD_POSITIONING_RIGHT,
+          textSizing: DEFAULT_TEXT_SIZING,
         },
         {
           title: "Tonya Says",
@@ -113,6 +118,7 @@ export default {
           job of capturing the essence of each child. Especially when we’ve done senior pictures! She 
           puts my kids at ease and is able to snap some creative, candid shots."`,
           positioning: STANDARD_POSITIONING_RIGHT,
+          textSizing: DEFAULT_TEXT_SIZING,
         },
         {
           title: "Natalie Says",
@@ -124,12 +130,15 @@ export default {
           the most breathtaking pictures! I am so, so thankful that Taryn has used her gift of art, color, 
           and photography to capture the most precious moments of our family’s lives!"`,
           positioning: STANDARD_POSITIONING_RIGHT,
+          textSizing:
+            "text-sm sm:text-lg md:text-base lg:text-sm xl:text-base 2xl:text-lg",
         },
         {
           title: "Alisa Says",
           quote: `"I wanted some graduation pictures of my daughter. We were able to get good pictures 
           right at our house! Taryn made my daughter feel comfortable and captured some really great shots!"`,
           positioning: STANDARD_POSITIONING_RIGHT,
+          textSizing: DEFAULT_TEXT_SIZING,
         },
         {
           title: "Jody Says",
@@ -137,6 +146,7 @@ export default {
           busy schedule & family attitudes. However, I wanted to update our family photo, and the result 
           was a wonderful photography experience. Taryn does such great work!"`,
           positioning: STANDARD_POSITIONING_RIGHT,
+          textSizing: DEFAULT_TEXT_SIZING,
         },
       ],
     };
@@ -161,13 +171,21 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  height: 500px;
+.testimonial-wrapper {
+  max-height: 780px;
+}
+.image {
+  max-height: 500px;
+  width: 100%;
+  /* margin: 0 auto; */
 }
 .title {
   font-family: "Give You Glory";
 }
 .pos-20 {
   object-position: 0 20%;
+}
+.mirror-x {
+  transform: scaleX(-1);
 }
 </style>
