@@ -5,36 +5,43 @@
         v-if="index === 0"
         src="../assets/images/testimonial001.jpg"
         class="image object-cover"
+        alt=""
       ></g-image>
       <g-image
         v-else-if="index === 1"
         src="../assets/images/testimonial002.jpg"
         class="image object-cover"
+        alt=""
       ></g-image>
       <g-image
         v-else-if="index === 2"
         src="../assets/images/testimonial003.jpg"
         class="image object-cover"
+        alt=""
       ></g-image>
       <g-image
         v-else-if="index === 3"
         src="../assets/images/testimonial004.jpg"
         class="image object-cover"
+        alt=""
       ></g-image>
       <g-image
         v-else-if="index === 4"
         src="../assets/images/testimonial005.jpg"
         class="image object-cover"
+        alt=""
       ></g-image>
       <g-image
         v-else-if="index === 5"
         src="../assets/images/testimonial006.jpg"
         class="image object-cover"
+        alt=""
       ></g-image>
       <g-image
         v-else-if="index === 6"
         src="../assets/images/testimonial007.jpg"
         class="image object-cover"
+        alt=""
       ></g-image>
       <div
         :class="
@@ -52,19 +59,23 @@
         <button
           class="absolute left-0 inset-y-0 focus:outline-none"
           @click="prevTestimonial()"
+          aria-label="see previous testimonial"
         >
           <img
             class="m-2 w-6 h-6 text-white"
             src="../assets/icons/chevron-left.svg"
+            alt=""
           />
         </button>
         <button
           class="absolute right-0 inset-y-0 focus:outline-none"
           @click="nextTestimonial()"
+          aria-label="see next testimonial"
         >
           <img
             class="m-2 w-6 h-6 text-white"
             src="../assets/icons/chevron-right.svg"
+            alt=""
           />
         </button>
       </div>

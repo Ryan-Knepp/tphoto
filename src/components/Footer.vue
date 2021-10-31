@@ -9,6 +9,7 @@
             href="https://www.facebook.com/tphotography"
             target="_blank"
             class="flex gap-2 items-center"
+            rel="noopener noreferrer"
           >
             <img src="../assets/icons/facebook.svg" alt />
             <p>Facebook</p>
@@ -19,6 +20,7 @@
             href="https://www.instagram.com/tphotography"
             target="_blank"
             class="flex gap-2 items-center"
+            rel="noopener noreferrer"
           >
             <img src="../assets/icons/instagram.svg" alt />
             <p>Instagram</p>

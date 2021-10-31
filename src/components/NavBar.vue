@@ -5,7 +5,12 @@
     >
       <!-- Desktop -->
       <g-link to="/" class="mx-auto">
-        <g-image src="../assets/images/logo.png" width="64" height="64" />
+        <g-image
+          src="../assets/images/logo.png"
+          alt="T Photography home"
+          width="64"
+          height="64"
+        />
       </g-link>
       <nav class="">
         <ul class="flex text-md uppercase">

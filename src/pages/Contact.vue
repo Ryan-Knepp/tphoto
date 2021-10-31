@@ -49,6 +49,9 @@ export default {
       container: this.$refs.contactForm,
       inlineOnMobile: true,
       onReady: this.setIsLoaded,
+      iframeProps: {
+        title: "Contact Taryn form",
+      },
     });
   },
   methods: {

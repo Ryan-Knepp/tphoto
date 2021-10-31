@@ -46,7 +46,6 @@ query {
 </static-query>
 
 <script>
-// import LightBox from "vue-image-lightbox";
 import "vue-image-lightbox/dist/vue-image-lightbox.min.css";
 
 export default {
@@ -54,7 +53,6 @@ export default {
   data() {
     return {
       swiperOption: {
-        // loop: true,
         autoHeight: true,
         calculateHeight: true,
         preloadImages: false,
@@ -81,9 +79,6 @@ export default {
       });
       this.$refs.lightbox.showImage(0);
     },
-  },
-  mounted: async function() {
-    console.log("In mounted");
   },
 };
 </script>

@@ -9,6 +9,7 @@
           <g-image
             src="../assets/images/packages/series.jpg"
             class="image sm:rounded-l"
+            alt
           />
         </div>
         <div class="flex flex-col md:my-3 ">
@@ -37,6 +38,7 @@
           <g-image
             src="../assets/images/packages/portrait.jpg"
             class="image sm:rounded-l"
+            alt
           />
         </div>
         <div class="flex flex-col md:my-3">
@@ -65,6 +67,7 @@
           <g-image
             src="../assets/images/packages/newborn.jpg"
             class="image sm:rounded-l"
+            alt
           />
         </div>
         <div class="flex flex-col md:my-3">
@@ -93,6 +96,7 @@
           <g-image
             src="../assets/images/packages/senior.jpg"
             class="image sm:rounded-l"
+            alt
           />
         </div>
         <div class="flex flex-col md:my-3">
