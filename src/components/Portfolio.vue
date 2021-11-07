@@ -16,6 +16,7 @@
       </div>
     </div>
     <light-box
+      v-if="selectedGroup.length > 0"
       :media="selectedGroup"
       ref="lightbox"
       :showLightBox="false"
