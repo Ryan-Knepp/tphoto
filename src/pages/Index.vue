@@ -12,10 +12,8 @@
       <div class="flex-1">
         <g-image src="../assets/images/aboutme/aboutme_home.jpg" />
       </div>
-      <div class="flex-1 my-auto pb-12">
-        <p>
-          Hi, I’m Taryn!
-        </p>
+      <div class="flex-1 my-auto pb-12 text-lg">
+        <p>Hi, I’m <span class="">Taryn</span>!</p>
         <p>
           Photographer / Busy Mom -- just like you!
         </p>
@@ -27,6 +25,16 @@
     </section>
     <Testimonials />
     <Portfolio />
+    <!-- SnapWidget -->
+    <!-- <iframe
+      src="https://snapwidget.com/embed/970564"
+      class="snapwidget-widget"
+      allowtransparency="true"
+      frameborder="0"
+      scrolling="no"
+      style="border:none; overflow:hidden;  width:640px; height:160px"
+      title="T Photography Instagram"
+    ></iframe> -->
   </Layout>
 </template>
 
