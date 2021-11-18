@@ -21,9 +21,6 @@
             <g-link to="/about/">About</g-link>
           </li>
           <li class=" mx-2 py-4 px-2">
-            <g-link to="/portfolio/">Portfolio</g-link>
-          </li>
-          <li class=" mx-2 py-4 px-2">
             <g-link to="/services/">Investment</g-link>
           </li>
           <li class="mx-2 py-4 px-2">

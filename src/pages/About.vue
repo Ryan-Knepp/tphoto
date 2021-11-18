@@ -1,10 +1,111 @@
 <template>
   <Layout>
-    <h1>About us</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <div class="main-container">
+      <h1 class="flex flex-col items-center my-4">
+        <span class="text-4xl title">Meet Taryn</span>
+      </h1>
+      <div class="grid grid-cols-2">
+        <p class="self-center mx-8">
+          When I’m not wielding my camera capturing moments of my own kids, I
+          can be found sipping iced coffee (I vacillate between iced mochas and
+          iced miels). Or I could be petting one of two household cats 😀 If you
+          know personality type stuff, I’m an ENFP (Myers-Briggs) and a 4w3
+          (Enneagram), which basically means I’m bursting with color,
+          creativity, emotion, & expression… which all work in your favor to get
+          personality-packed photos!
+        </p>
+        <g-image
+          class="object-scale-down"
+          src="../assets/images/aboutme/about1.jpg"
+        />
+      </div>
+      <div class="grid grid-cols-2">
+        <g-image
+          class="object-scale-down"
+          src="../assets/images/aboutme/about2.jpg"
+        />
+        <div class="self-center mx-8">
+          <p>You want some updated pics of your kids...</p>
+          <p>Struggling to figure out how to make it happen?</p>
+          <p>
+            Of course you are! You’re busy! Stuff like this gets put on the
+            backburner, because there are more important things right in front
+            of you… like relationships, your kids’ needs, your grocery list,
+            your 78 loads of laundry, etc!
+          </p>
+          <p>
+            Not to mention, you’ve done this before-- booked a photographer,
+            paid the money, gotten the kids looking adorable for the session,
+            only to have them misbehave during pictures & only end up with a
+            couple of pictures you actually like. Which you now have to spend
+            MORE time & money on in order to get prints made to display in your
+            home.
+          </p>
+        </div>
+      </div>
+      <div class="wrapper-3 mx-8">
+        <div class="relative">
+          <g-image
+            class="image object-scale-down"
+            src="../assets/images/aboutme/about3.jpg"
+          />
+          <div
+            class="p-4 flex flex-col justify-center bg-t-pink transform -translate-y-12"
+          >
+            <p>
+              Listen-- my job is to make it super simple for you. When we work
+              together, you’ll get:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                Guidance for your session, including a free tips & outfit guide
+                to help you prepare
+              </li>
+              <li>
+                A quick & efficient photo session-- I am a Mom of littles, too
+                so understand the importance of maximizing on the “good
+                behavior” window
+              </li>
+              <li>
+                Sweet, candid photos of your kids that show each child’s unique
+                personality - capturing all of the best moments & the ones in
+                between
+              </li>
+              <li>
+                A gallery of full resolution digital negatives, which gives you
+                the power to share, download & keep those pictures forever.
+                Includes instructions on how to print & develop products from
+                them in a cost-effective way!
+              </li>
+            </ul>
+            <p>
+              I’m a busy Mom, too. And as it turns out, I know exactly what you
+              want, because it’s what I want, too when I look for a
+              photographer!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mb-4">
+        <g-link
+          class="py-2 px-4 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
+          to="/services/"
+          >Let’s Work Together!</g-link
+        >
+      </div>
+    </div>
   </Layout>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
+
+<style scoped>
+.wrapper {
+  max-height: 780px;
+}
+.title {
+  font-family: "Give You Glory";
+}
+</style>
