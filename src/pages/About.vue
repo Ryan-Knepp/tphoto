@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <div class="main-container">
-      <h1 class="flex flex-col items-center my-4">
-        <span class="text-4xl title">Meet Taryn</span>
+    <div class="main-container font-main">
+      <h1 class="flex flex-col items-center mt-8 mb-4">
+        <span class="text-4xl font-cursive">Meet Taryn</span>
       </h1>
-      <div class="grid grid-cols-2">
-        <p class="self-center mx-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 text-justify mb-4">
+        <p class="self-center mx-8 order-last md:order-first leading-normal">
           When I’m not wielding my camera capturing moments of my own kids, I
           can be found sipping iced coffee (I vacillate between iced mochas and
           iced miels). Or I could be petting one of two household cats 😀 If you
@@ -19,15 +19,15 @@
           src="../assets/images/aboutme/about1.jpg"
         />
       </div>
-      <div class="grid grid-cols-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 text-justify mb-4">
         <g-image
           class="object-scale-down"
           src="../assets/images/aboutme/about2.jpg"
         />
         <div class="self-center mx-8">
-          <p>You want some updated pics of your kids...</p>
-          <p>Struggling to figure out how to make it happen?</p>
-          <p>
+          <p class="pb-2">You want some updated pics of your kids...</p>
+          <p class="pb-2">Struggling to figure out how to make it happen?</p>
+          <p class="pb-2">
             Of course you are! You’re busy! Stuff like this gets put on the
             backburner, because there are more important things right in front
             of you… like relationships, your kids’ needs, your grocery list,
@@ -50,13 +50,13 @@
             src="../assets/images/aboutme/about3.jpg"
           />
           <div
-            class="p-4 flex flex-col justify-center bg-t-pink transform -translate-y-12"
+            class="text-block mx-auto p-4 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
           >
-            <p>
+            <p class="pb-2">
               Listen-- my job is to make it super simple for you. When we work
               together, you’ll get:
             </p>
-            <ul class="list-disc list-inside">
+            <ul class="list-disc list-inside pb-2">
               <li>
                 Guidance for your session, including a free tips & outfit guide
                 to help you prepare
@@ -86,9 +86,9 @@
           </div>
         </div>
       </div>
-      <div class="mx-auto mb-4">
+      <div class="text-center mb-8">
         <g-link
-          class="py-2 px-4 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
+          class="text-xl py-2 px-4 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
           to="/services/"
           >Let’s Work Together!</g-link
         >
@@ -105,7 +105,7 @@ export default {};
 .wrapper {
   max-height: 780px;
 }
-.title {
-  font-family: "Give You Glory";
+.text-block {
+  max-width: 65ch;
 }
 </style>

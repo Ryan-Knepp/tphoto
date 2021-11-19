@@ -12,8 +12,8 @@
           height="64"
         />
       </g-link>
-      <nav class="">
-        <ul class="flex text-md uppercase">
+      <nav class="navbar">
+        <ul class="flex text-md uppercase justify-end">
           <li class="mx-2 py-4 px-2">
             <g-link to="/">Home</g-link>
           </li>
@@ -23,9 +23,9 @@
           <li class=" mx-2 py-4 px-2">
             <g-link to="/services/">Investment</g-link>
           </li>
-          <li class="mx-2 py-4 px-2">
+          <!-- <li class="mx-2 py-4 px-2">
             <g-link to="/blog/">Blog</g-link>
-          </li>
+          </li> -->
           <li class="pl-4 py-4 px-2">
             <g-link to="/contact/">Contact</g-link>
           </li>
@@ -98,9 +98,9 @@
         <li class="p-2">
           <g-link to="/services/">Investment</g-link>
         </li>
-        <li class="p-2">
+        <!-- <li class="p-2">
           <g-link to="/blog/">Blog</g-link>
-        </li>
+        </li> -->
         <li class="p-2">
           <g-link to="/contact/">Contact</g-link>
         </li>
@@ -124,4 +124,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.navbar {
+  min-width: 50%;
+}
+</style>

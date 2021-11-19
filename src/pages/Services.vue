@@ -27,7 +27,7 @@
             - this is the best value!
           </p>
           <a
-            href="/"
+            href="/book/"
             class="mx-auto my-2 shadow-lg bg-white border-t-white border-1 px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none hover:bg-t-dark-pink focus:ring-2 focus:ring-t-pink focus:ring-offset-2"
             >Book Now</a
           >
@@ -56,7 +56,7 @@
             relationship represented.
           </p>
           <a
-            href="/"
+            href="/book/"
             class="mx-auto my-2 shadow-lg bg-white border-t-white border-1 px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none hover:bg-t-dark-pink focus:ring-2 focus:ring-t-pink focus:ring-offset-2"
             >Book Now</a
           >
@@ -85,7 +85,7 @@
             faces, the perfect details.
           </p>
           <a
-            href="/"
+            href="/book/"
             class="mx-auto my-2 shadow-lg bg-white border-t-white border-1 px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none hover:bg-t-dark-pink focus:ring-2 focus:ring-t-pink focus:ring-offset-2"
             >Book Now</a
           >
@@ -114,7 +114,7 @@
             express their personality & passions!
           </p>
           <a
-            href="/"
+            href="/book/"
             class="mx-auto my-2 shadow-lg bg-white border-t-white border-1 px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none hover:bg-t-dark-pink focus:ring-2 focus:ring-t-pink focus:ring-offset-2"
             >Book Now</a
           >

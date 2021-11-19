@@ -24,10 +24,16 @@ module.exports = {
         "t-grey": "#E6D2C9",
         "t-white": "#FBF2ED",
       },
+      fontFamily: {
+        cursive: "Give You Glory",
+        thin: "Poiret One",
+        main: "Raleway",
+        typewriter: "Special Elite",
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
