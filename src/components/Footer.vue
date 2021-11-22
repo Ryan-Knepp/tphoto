@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-t-dark-pink text-t-white pt-6">
+  <footer class="bg-t-dark-pink text-t-white font-main pt-6">
     <div
       class="max-w-screen-2xl mx-auto sm:w-full sm:px-2 xl:w-3/4 xl:px-0 flex flex-col md:flex-row justify-center md:divide-x-2 md:dividie-t-white"
     >

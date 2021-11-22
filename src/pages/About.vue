@@ -5,7 +5,9 @@
         <span class="text-4xl font-cursive">Meet Taryn</span>
       </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 text-justify mb-4">
-        <p class="self-center mx-8 order-last md:order-first leading-normal">
+        <p
+          class="self-center mx-8 order-last md:order-first text-lg leading-relaxed"
+        >
           When I’m not wielding my camera capturing moments of my own kids, I
           can be found sipping iced coffee (I vacillate between iced mochas and
           iced miels). Or I could be petting one of two household cats 😀 If you
@@ -19,7 +21,9 @@
           src="../assets/images/aboutme/about1.jpg"
         />
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 text-justify mb-4">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 text-justify text-lg leading-relaxed mb-4"
+      >
         <g-image
           class="object-scale-down"
           src="../assets/images/aboutme/about2.jpg"
@@ -50,7 +54,7 @@
             src="../assets/images/aboutme/about3.jpg"
           />
           <div
-            class="text-block mx-auto p-4 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
+            class="text-block text-lg leading-relaxed mx-auto p-4 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
           >
             <p class="pb-2">
               Listen-- my job is to make it super simple for you. When we work

@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div class="font-main">
     <h1 class="sm:hidden flex flex-col items-center">
-      <span class="text-2xl text-t-dark-pink font-bold">Taryn Knepp</span>
-      <span class="text-sm text-center text-gray-600"
+      <span class="text-2xl text-t-dark-pink font-bold font-cursive"
+        >Taryn Knepp</span
+      >
+      <span class="text-sm font-thin text-center text-gray-600"
         >Central Illinois Family Photographer</span
       >
     </h1>
@@ -11,10 +13,12 @@
         class="col-start-4 col-end-10 row-start-1 row-end-1 justify-self-center self-center"
       >
         <h1 class="hidden mx-auto sm:flex flex-col items-center">
-          <span class="text-4xl lg:text-5xl text-t-dark-pink font-bold"
+          <span
+            class="text-4xl lg:text-5xl text-t-dark-pink font-bold font-cursive"
             >Taryn Knepp</span
           >
-          <span class="pb-0 text-sm lg:text-md text-center text-gray-600"
+          <span
+            class="pb-0 text-sm lg:text-md font-thin text-center text-gray-600"
             >Central Illinois Family Photographer</span
           >
         </h1>

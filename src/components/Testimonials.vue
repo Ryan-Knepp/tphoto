@@ -1,5 +1,5 @@
 <template>
-  <section class="testimonial-wrapper my-4">
+  <section class="testimonial-wrapper font-main my-4">
     <div class="relative">
       <g-image
         v-if="index === 0"

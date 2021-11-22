@@ -2,7 +2,7 @@
   <Layout>
     <Collage />
     <div
-      class="main-container grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 items-center"
+      class="main-container font-main grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 items-center"
     >
       <section class="flex bg-t-dark-pink self-stretch shadow-lg sm:rounded">
         <div class="my-auto">

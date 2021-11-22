@@ -4,9 +4,12 @@
       T's Work
     </h2>
 
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
+    <div class="flex flex-col sm:flex-row justify-center font-main gap-4">
       <div v-for="group in $static.groups.edges" :key="group.node.id">
-        <button @click="selectSwiper(group.node.id)" class="bg-t-pink text-lg">
+        <button
+          @click="selectSwiper(group.node.id)"
+          class="bg-t-pink text-xl font-main hover:shadow-md"
+        >
           <g-image
             :src="group.node.portfolioPictures[0].file.url"
             :alt="group.node.portfolioPictures[0].description"
