@@ -29,7 +29,7 @@
           <li class="pl-4 py-4 px-2">
             <g-link to="/contact/">Contact</g-link>
           </li>
-          <li class="ml-2 pl-4 py-4">
+          <li class="ml-2 pl-4 py-4 pr-2">
             <g-link
               to="/book/"
               class="py-2 px-4 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
@@ -40,72 +40,38 @@
       </nav>
     </header>
     <!-- Mobile with menu -->
-    <header class="lg:hidden flex">
+    <header :class="`lg:hidden flex ${menuOpen ? 'nav--active' : ''}`">
       <g-link to="/" class="flex-grow self-center">
         <g-image src="../assets/images/logo.png" width="64" height="64" />
       </g-link>
       <g-link
         to="/book/"
-        class="py-2 px-4 my-4 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
+        class="py-2 px-4 my-4 mr-16 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
         >Book Taryn</g-link
       >
-      <button
-        type="button"
-        @click="onMenuClick"
-        class="m-2 p-2 rounded-full text-t-dark-pink hover:text-t-pink focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-t-dark-pink focus:ring-white"
-      >
-        <!-- Open -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          v-if="!menuOpen"
-          class="h-10 w-10"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          />
-        </svg>
-        <!-- Close -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          v-else
-          class="h-10 w-10"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
+      <button href="#" @click="onMenuClick" :class="`nav__trigger pt-3 mr-3`">
+        <span class="nav__icon"></span>
       </button>
-    </header>
-    <nav v-show="menuOpen" class="border-b border-t-dark-pink">
-      <ul class="flex flex-col items-center text-md uppercase">
-        <li class="p-2">
-          <g-link to="/">Home</g-link>
-        </li>
-        <li class="p-2">
-          <g-link to="/about/">About</g-link>
-        </li>
-        <li class="p-2">
-          <g-link to="/portfolio/">Portfolio</g-link>
-        </li>
-        <li class="p-2">
-          <g-link to="/services/">Investment</g-link>
-        </li>
-        <!-- <li class="p-2">
-          <g-link to="/blog/">Blog</g-link>
+      <nav :class="`nav ${menuOpen ? 'block' : 'hidden'} pt-16`">
+        <ul class="nav__list flex flex-col items-center text-2xl divide-y-2">
+          <li class="nav__item nav_item-1 py-4">
+            <g-link to="/" class="nav__link">Home</g-link>
+          </li>
+          <li class="nav__item nav_item-2 py-4">
+            <g-link to="/about/" class="nav__link">About</g-link>
+          </li>
+          <li class="nav__item nav_item-3 py-4">
+            <g-link to="/services/" class="nav__link">Investment</g-link>
+          </li>
+          <!-- <li class="nav__item nav__item-4 my-4">
+          <g-link to="/blog/" class="nav__link">Blog</g-link>
         </li> -->
-        <li class="p-2">
-          <g-link to="/contact/">Contact</g-link>
-        </li>
-      </ul>
-    </nav>
+          <li class="nav__item nav_item-4 py-4">
+            <g-link to="/contact/" class="nav__link">Contact</g-link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </div>
 </template>
 
@@ -124,8 +90,152 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="less">
+@nav-color: #f6bcb1;
+@nav-bg-active: #333;
+@duration: 300ms;
+@ease: ease-in-out;
 .navbar {
   min-width: 50%;
+}
+/* Default navigation icon */
+.nav__trigger {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  right: 10px;
+  top: 10px;
+  z-index: 200;
+  outline: none;
+}
+
+.nav--active .nav__trigger {
+  opacity: 0.5;
+}
+
+.nav__icon {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 5px;
+  background-color: @nav-color;
+  transition-property: background-color, transform;
+  transition-duration: @duration;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background: @nav-color;
+    transition-property: margin, transform;
+    transition-duration: @duration;
+  }
+
+  &:before {
+    margin-top: -10px;
+  }
+
+  &:after {
+    margin-top: 10px;
+  }
+}
+
+.nav {
+  position: fixed;
+  z-index: 199;
+  transform: translate(100%, -100%) scale(0.5);
+  border-radius: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f6bcb1;
+  // opacity: 0.85;
+}
+
+.nav--active .nav {
+  transform: translateY(0) scale(1);
+  border-radius: 0;
+  // width: 100%;
+  // height: 100%;
+}
+
+// .nav__link {
+//   opacity: 0;
+//   transition-delay: 500ms;
+// }
+
+// .nav--active .nav__link {
+//   opacity: 1;
+// }
+
+.nav--active .nav__icon {
+  background: rgba(0, 0, 0, 0);
+
+  &:before,
+  &::after {
+    background-color: #ffffffcc;
+  }
+
+  &:before {
+    margin-top: 0;
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.nav_item-1 {
+  opacity: 0;
+  transform-origin: top right;
+  animation: translateX 300ms (60ms) ease-in-out forwards;
+}
+.nav_item-2 {
+  opacity: 0;
+  transform-origin: top right;
+  animation: translateX 300ms (120ms) ease-in-out forwards;
+}
+.nav_item-3 {
+  opacity: 0;
+  transform-origin: top right;
+  animation: translateX 300ms (180ms) ease-in-out forwards;
+}
+.nav_item-4 {
+  opacity: 0;
+  transform-origin: top right;
+  animation: translateX 300ms (240ms) ease-in-out forwards;
+}
+.nav_item-5 {
+  opacity: 0;
+  transform-origin: top right;
+  animation: translateX 300ms (300ms) ease-in-out forwards;
+}
+.nav_item-6 {
+  opacity: 0;
+  transform-origin: top right;
+  animation: translateX 360ms (360ms) ease-in-out forwards;
+}
+
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+
+  80% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 </style>
