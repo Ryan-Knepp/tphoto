@@ -28,7 +28,7 @@
           </p>
           <a
             href="/book/"
-            class="mx-auto my-2 shadow-lg bg-white border-t-white border-1 px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none hover:bg-t-dark-pink focus:ring-2 focus:ring-t-pink focus:ring-offset-2"
+            class="raise mx-auto my-2 border-black border px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none focus:ring-offset-2"
             >Book Now</a
           >
         </div>
@@ -57,7 +57,7 @@
           </p>
           <a
             href="/book/"
-            class="mx-auto my-2 shadow-lg bg-white border-t-white border-1 px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none hover:bg-t-dark-pink focus:ring-2 focus:ring-t-pink focus:ring-offset-2"
+            class="raise mx-auto my-2 border-black border px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none focus:ring-offset-2"
             >Book Now</a
           >
         </div>
@@ -86,7 +86,7 @@
           </p>
           <a
             href="/book/"
-            class="mx-auto my-2 shadow-lg bg-white border-t-white border-1 px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none hover:bg-t-dark-pink focus:ring-2 focus:ring-t-pink focus:ring-offset-2"
+            class="raise mx-auto my-2 border-black border px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none focus:ring-offset-2"
             >Book Now</a
           >
         </div>
@@ -115,7 +115,7 @@
           </p>
           <a
             href="/book/"
-            class="mx-auto my-2 shadow-lg bg-white border-t-white border-1 px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none hover:bg-t-dark-pink focus:ring-2 focus:ring-t-pink focus:ring-offset-2"
+            class="raise mx-auto my-2 border-black border px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none focus:ring-offset-2"
             >Book Now</a
           >
         </div>
@@ -139,5 +139,14 @@ export default {
 <style scoped>
 .image {
   max-width: 200px;
+}
+
+.raise {
+  transition: all 0.25s ease;
+}
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #000;
+  transform: translateY(-0.25em);
 }
 </style>

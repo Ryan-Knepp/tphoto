@@ -14,20 +14,20 @@
       </g-link>
       <nav class="navbar">
         <ul class="flex text-md uppercase justify-end">
-          <li class="mx-2 py-4 px-2">
-            <g-link to="/">Home</g-link>
+          <li class="mx-2 py-4 px-2 relative">
+            <g-link to="/" class="desktop_item">Home</g-link>
           </li>
-          <li class="mx-2 py-4 px-2">
-            <g-link to="/about/">About</g-link>
+          <li class="mx-2 py-4 px-2 relative">
+            <g-link to="/about/" class="desktop_item">About</g-link>
           </li>
-          <li class=" mx-2 py-4 px-2">
-            <g-link to="/services/">Investment</g-link>
+          <li class="mx-2 py-4 px-2 relative">
+            <g-link to="/services/" class="desktop_item">Investment</g-link>
           </li>
-          <!-- <li class="mx-2 py-4 px-2">
-            <g-link to="/blog/">Blog</g-link>
+          <!-- <li class="mx-2 py-4 px-2 relative">
+            <g-link to="/blog/" class="desktop_item">Blog</g-link>
           </li> -->
-          <li class="pl-4 py-4 px-2">
-            <g-link to="/contact/">Contact</g-link>
+          <li class="pl-4 py-4 px-2 relative">
+            <g-link to="/contact/" class="desktop_item">Contact</g-link>
           </li>
           <li class="ml-2 pl-4 py-4 pr-2">
             <g-link
@@ -237,5 +237,23 @@ export default {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.desktop_item:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  transition: all 0.5s;
+}
+
+.desktop_item:hover:after {
+  width: 100%;
 }
 </style>
