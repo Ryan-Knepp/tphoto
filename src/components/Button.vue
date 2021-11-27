@@ -3,7 +3,7 @@
     to="/book/"
     :class="
       `fancy mx-auto my-2 px-6 py-2 self-center focus:outline-none focus:ring-offset-2 ${
-        this.class
+        this.addClass
       }`
     "
     >Book Taryn</g-link
@@ -13,7 +13,7 @@
 <script>
 export default {
   props: {
-    class: String,
+    addClass: String,
   },
 };
 </script>

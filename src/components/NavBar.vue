@@ -40,7 +40,7 @@
       <g-link to="/" class="flex-grow self-center">
         <g-image src="../assets/images/logo.png" width="64" height="64" />
       </g-link>
-      <Button class="my-4 mr-16" />
+      <Button addClass="my-4 mr-16" />
       <button href="#" @click="onMenuClick" :class="`nav__trigger pt-3 mr-3`">
         <span class="nav__icon"></span>
       </button>
