@@ -92,7 +92,7 @@
       </div>
       <div class="text-center mb-8">
         <g-link
-          class="text-xl py-2 px-4 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
+          class="fancy text-xl py-2 px-4 focus:outline-none"
           to="/services/"
           >Let’s Work Together!</g-link
         >
@@ -105,11 +105,77 @@
 export default {};
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .wrapper {
   max-height: 780px;
 }
 .text-block {
   max-width: 65ch;
+}
+@mixin btn-border-drawing(
+  $color: #ccc,
+  $hover: black,
+  $width: 2px,
+  $vertical: top,
+  $horizontal: left,
+  $duration: 0.25s
+) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    #{$vertical}: 0;
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == "left", "right", "left");
+
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+
+  &::after {
+    $v-side: if($vertical == "top", "bottom", "top");
+
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover;
+
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      transition-delay: 0s, 0s, $duration;
+    }
+
+    &::after {
+      transition-delay: 0s, $duration, 0s;
+    }
+  }
+}
+
+.fancy {
+  @include btn-border-drawing(black, #e29271, 2px, bottom, right);
 }
 </style>

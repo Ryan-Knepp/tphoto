@@ -28,7 +28,7 @@
           </p>
           <a
             href="/book/"
-            class="raise mx-auto my-2 border-black border px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none focus:ring-offset-2"
+            class="fancy mx-auto my-2 px-6 lg:px-12 py-2 self-center focus:outline-none focus:ring-offset-2"
             >Book Now</a
           >
         </div>
@@ -57,7 +57,7 @@
           </p>
           <a
             href="/book/"
-            class="raise mx-auto my-2 border-black border px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none focus:ring-offset-2"
+            class="fancy mx-auto my-2 px-6 lg:px-12 py-2 self-center focus:outline-none focus:ring-offset-2"
             >Book Now</a
           >
         </div>
@@ -86,7 +86,7 @@
           </p>
           <a
             href="/book/"
-            class="raise mx-auto my-2 border-black border px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none focus:ring-offset-2"
+            class="fancy-alt mx-auto my-2 px-6 lg:px-12 py-2 self-center focus:outline-none focus:ring-offset-2"
             >Book Now</a
           >
         </div>
@@ -115,7 +115,7 @@
           </p>
           <a
             href="/book/"
-            class="raise mx-auto my-2 border-black border px-6 lg:px-12 py-2 self-center rounded-md focus:outline-none focus:ring-offset-2"
+            class="fancy-alt mx-auto my-2 px-6 lg:px-12 py-2 self-center focus:outline-none focus:ring-offset-2"
             >Book Now</a
           >
         </div>
@@ -136,9 +136,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .image {
   max-width: 200px;
+}
+
+.simple {
+  transition: all 0.25s ease;
+}
+.simple:hover,
+.simple:focus {
+  background-color: white;
 }
 
 .raise {
@@ -148,5 +156,75 @@ export default {
 .raise:focus {
   box-shadow: 0 0.5em 0.5em -0.4em #000;
   transform: translateY(-0.25em);
+}
+
+@mixin btn-border-drawing(
+  $color: #ccc,
+  $hover: black,
+  $width: 2px,
+  $vertical: top,
+  $horizontal: left,
+  $duration: 0.25s
+) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    #{$vertical}: 0;
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == "left", "right", "left");
+
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+
+  &::after {
+    $v-side: if($vertical == "top", "bottom", "top");
+
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover;
+
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      transition-delay: 0s, 0s, $duration;
+    }
+
+    &::after {
+      transition-delay: 0s, $duration, 0s;
+    }
+  }
+}
+
+.fancy {
+  @include btn-border-drawing(black, white, 2px, bottom, right);
+}
+.fancy-alt {
+  @include btn-border-drawing(black, #e29271, 2px, bottom, right);
 }
 </style>

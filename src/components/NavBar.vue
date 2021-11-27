@@ -30,11 +30,7 @@
             <g-link to="/contact/" class="desktop_item">Contact</g-link>
           </li>
           <li class="ml-2 pl-4 py-4 pr-2">
-            <g-link
-              to="/book/"
-              class="py-2 px-4 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
-              >Book Taryn</g-link
-            >
+            <Button />
           </li>
         </ul>
       </nav>
@@ -44,11 +40,7 @@
       <g-link to="/" class="flex-grow self-center">
         <g-image src="../assets/images/logo.png" width="64" height="64" />
       </g-link>
-      <g-link
-        to="/book/"
-        class="py-2 px-4 my-4 mr-16 bg-t-pink text-black rounded-lg shadow-md hover:bg-t-dark-pink focus:outline-none focus:ring-2 focus:ring-t-pink focus:ring-opacity-75"
-        >Book Taryn</g-link
-      >
+      <Button class="my-4 mr-16" />
       <button href="#" @click="onMenuClick" :class="`nav__trigger pt-3 mr-3`">
         <span class="nav__icon"></span>
       </button>
@@ -76,7 +68,11 @@
 </template>
 
 <script>
+import Button from "../components/Button.vue";
 export default {
+  components: {
+    Button,
+  },
   data() {
     return {
       menuOpen: false,

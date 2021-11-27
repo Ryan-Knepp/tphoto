@@ -20,7 +20,7 @@
         <p>
           I'm here to help you create beautiful, candid moments.
         </p>
-        <g-link to="/about/" class="link text-xl">Get to know Me</g-link>
+        <g-link to="/about/" class="link text-xl mt-4">Get to know Me</g-link>
       </div>
     </section>
     <Testimonials />
