@@ -7,7 +7,7 @@
     <div class="flex flex-col sm:flex-row justify-center font-main gap-4">
       <div v-for="group in $static.groups.edges" :key="group.node.id">
         <button
-          @click="selectSwiper(group.node.id)"
+          @click="showOverlay(group.node.id)"
           class="bg-t-pink text-xl font-main hover:shadow-md"
         >
           <g-image
@@ -18,12 +18,11 @@
         </button>
       </div>
     </div>
-    <light-box
-      :media="selectedGroup"
-      ref="lightbox"
-      :showLightBox="false"
-      :showThumbs="false"
-    />
+    <silent-box :gallery="selectedGroup" ref="silentbox">
+      <template v-slot:silentbox-item
+        ><div class="hidden" />
+      </template>
+    </silent-box>
   </section>
 </template>
 
@@ -49,27 +48,15 @@ query {
 </static-query>
 
 <script>
-import "vue-image-lightbox/dist/vue-image-lightbox.min.css";
-
 export default {
   components: {},
   data() {
     return {
-      swiperOption: {
-        autoHeight: true,
-        calculateHeight: true,
-        preloadImages: false,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
       selectedGroup: [{ src: "", caption: "" }],
-      lightboxReady: false,
     };
   },
   methods: {
-    selectSwiper(key) {
+    showOverlay(key) {
       //
       const group = this.$static.groups.edges.find(
         (edge) => edge.node.id === key
@@ -77,10 +64,10 @@ export default {
       this.selectedGroup = group.node.portfolioPictures.map((picture) => {
         return {
           src: picture.file.url,
-          caption: picture.description,
+          alt: picture.description,
         };
       });
-      this.$refs.lightbox.showImage(0);
+      this.$refs.silentbox.openOverlay(this.selectedGroup[0], 0);
     },
   },
 };
