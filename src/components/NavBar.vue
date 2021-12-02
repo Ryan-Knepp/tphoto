@@ -41,10 +41,12 @@
         <g-image src="../assets/images/logo.png" width="64" height="64" />
       </g-link>
       <Button addClass="my-4 mr-16" />
-      <button href="#" @click="onMenuClick" :class="`nav__trigger pt-3 mr-3`">
+      <button @click="onMenuClick" :class="`nav__trigger pt-3 mr-3`">
         <span class="nav__icon"></span>
       </button>
-      <nav :class="`nav ${menuOpen ? 'block' : 'hidden'} pt-16`">
+      <nav
+        :class="`nav ${menuOpen ? 'block visible' : 'hidden invisible'} pt-16`"
+      >
         <ul class="nav__list flex flex-col items-center text-2xl divide-y-2">
           <li class="nav__item nav_item-1 py-4">
             <g-link to="/" class="nav__link">Home</g-link>
