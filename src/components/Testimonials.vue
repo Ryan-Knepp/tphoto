@@ -4,43 +4,43 @@
       <g-image
         v-if="index === 0"
         src="../assets/images/testimonial001.jpg"
-        class="image object-cover"
+        class="image transition-opacity object-cover"
         alt=""
       ></g-image>
       <g-image
         v-else-if="index === 1"
         src="../assets/images/testimonial002.jpg"
-        class="image object-cover"
+        class="image transition-opacit object-cover mirror-x"
         alt=""
       ></g-image>
       <g-image
         v-else-if="index === 2"
         src="../assets/images/testimonial003.jpg"
-        class="image object-cover"
+        class="image transition-opacit object-cover"
         alt=""
       ></g-image>
       <g-image
         v-else-if="index === 3"
         src="../assets/images/testimonial004.jpg"
-        class="image object-cover"
+        class="image transition-opacit object-cover"
         alt=""
       ></g-image>
       <g-image
         v-else-if="index === 4"
         src="../assets/images/testimonial005.jpg"
-        class="image object-cover"
+        class="image transition-opacit object-cover"
         alt=""
       ></g-image>
       <g-image
         v-else-if="index === 5"
         src="../assets/images/testimonial006.jpg"
-        class="image object-cover"
+        class="image transition-opacit object-cover"
         alt=""
       ></g-image>
       <g-image
         v-else-if="index === 6"
         src="../assets/images/testimonial007.jpg"
-        class="image object-cover"
+        class="image transition-opacit object-cover"
         alt=""
       ></g-image>
       <div
@@ -188,7 +188,6 @@ export default {
 .image {
   max-height: 500px;
   width: 100%;
-  /* margin: 0 auto; */
 }
 .title {
   font-family: "Give You Glory";

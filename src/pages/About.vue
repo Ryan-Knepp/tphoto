@@ -1,24 +1,28 @@
 <template>
   <Layout>
     <div class="main-container font-main">
-      <h1 class="flex flex-col items-center mt-8 mb-4">
-        <span class="text-4xl font-cursive">Meet Taryn</span>
-      </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 text-justify mb-4">
-        <p
-          class="self-center mx-8 order-last md:order-first text-lg leading-relaxed"
-        >
-          When I’m not wielding my camera capturing moments of my own kids, I
-          can be found sipping iced coffee (I vacillate between iced mochas and
-          iced miels). Or I could be petting one of two household cats 😀 If you
-          know personality type stuff, I’m an ENFP (Myers-Briggs) and a 4w3
-          (Enneagram), which basically means I’m bursting with color,
-          creativity, emotion, & expression… which all work in your favor to get
-          personality-packed photos!
-        </p>
+        <div class="mx-8 order-last md:order-first md:pt-12">
+          <h1 class="flex flex-col items-center mt-8 mb-4">
+            <span class="text-4xl font-cursive">Meet Taryn</span>
+          </h1>
+          <p class="text-lg leading-relaxed flex-grow md:pt-8">
+            When I’m not wielding my camera capturing moments of my own kids, I
+            can be found sipping iced coffee (I vacillate between iced mochas
+            and iced miels). Or I could be petting one of two household cats 😀
+            If you know personality type stuff, I’m an ENFP (Myers-Briggs) and a
+            4w3 (Enneagram), which basically means I’m bursting with
+            <span class="rainbox-text font-bold">color</span>,
+            <span class="font-cursive">creativity</span>,
+            <span class="font-thin">emotion</span>, &
+            <span class="font-typewriter">expression…</span>
+            which all work in your favor to get personality-packed photos!
+          </p>
+        </div>
         <g-image
           class="object-scale-down"
           src="../assets/images/aboutme/about1.jpg"
+          alt="Taryn with coffee"
         />
       </div>
       <div
@@ -27,6 +31,7 @@
         <g-image
           class="object-scale-down"
           src="../assets/images/aboutme/about2.jpg"
+          alt="Taryn with her kids"
         />
         <div class="self-center mx-8">
           <p class="pb-2">You want some updated pics of your kids...</p>
@@ -52,9 +57,10 @@
           <g-image
             class="image object-scale-down"
             src="../assets/images/aboutme/about3.jpg"
+            alt="Taryn taking photos"
           />
           <div
-            class="text-block text-lg leading-relaxed mx-auto p-4 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
+            class="text-block text-lg leading-relaxed mx-auto py-6 px-8 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
           >
             <p class="pb-2">
               Listen-- my job is to make it super simple for you. When we work
@@ -62,24 +68,25 @@
             </p>
             <ul class="list-disc list-inside pb-2">
               <li>
-                Guidance for your session, including a free tips & outfit guide
-                to help you prepare
+                <span class="font-bold">Guidance for your session</span>,
+                including a free tips & outfit guide to help you prepare
               </li>
               <li>
-                A quick & efficient photo session-- I am a Mom of littles, too
-                so understand the importance of maximizing on the “good
-                behavior” window
+                <span class="font-bold">A quick & efficient photo session</span
+                >-- I am a Mom of littles, too so understand the importance of
+                maximizing on the “good behavior” window
               </li>
               <li>
-                Sweet, candid photos of your kids that show each child’s unique
-                personality - capturing all of the best moments & the ones in
-                between
+                <span class="font-bold">Sweet, candid photos</span> of your kids
+                that show each child’s unique personality - capturing all of the
+                best moments & the ones in between
               </li>
               <li>
-                A gallery of full resolution digital negatives, which gives you
-                the power to share, download & keep those pictures forever.
-                Includes instructions on how to print & develop products from
-                them in a cost-effective way!
+                <span class="font-bold"
+                  >A gallery of full resolution digital negatives</span
+                >, which gives you the power to share, download & keep those
+                pictures forever. Includes instructions on how to print &
+                develop products from them in a cost-effective way!
               </li>
             </ul>
             <p>
@@ -177,5 +184,21 @@ export default {};
 
 .fancy {
   @include btn-border-drawing(black, #e29271, 2px, bottom, right);
+}
+
+.rainbox-text {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 </style>

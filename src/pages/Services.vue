@@ -1,6 +1,40 @@
 <template>
   <Layout>
-    <Collage />
+    <section class="main-container font-main flex gap-4">
+      <article class="prose-sm md:prose lg:w-1/2">
+        <h1>
+          I’ll help you get those pictures packed with personality in no time at
+          all, by...
+        </h1>
+        <ul>
+          <li>
+            Working with your schedule to come up with the best time for photos
+          </li>
+          <li>Providing an outfits & tips guide to prep for your session</li>
+          <li>
+            Offering quick & efficient picture-taking (I often have clients tell
+            me “Wow, that wasn’t as bad as I thought it was going to be” after
+            the session… music to my ears!)
+          </li>
+          <li>
+            Capturing each moment with careful attention to interaction, facial
+            expressions, & candor
+          </li>
+        </ul>
+
+        <p>
+          I know pictures are an investment. And I know life is busy. Here’s the
+          thing: I have never had anyone tell me that they regret getting
+          pictures taken. Only that they wish they had taken pictures sooner! I
+          would <span class="font-cursive">LOVE</span> to be the capturer behind
+          the camera for you. Let’s make it happen!
+        </p>
+      </article>
+      <g-image
+        src="../assets/images/investment1.jpeg"
+        class="hidden lg:block object-scale-down lg:w-1/2"
+      />
+    </section>
     <div
       class="main-container font-main grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 items-center"
     >
@@ -125,11 +159,8 @@
 </template>
 
 <script>
-import Collage from "../components/Collage.vue";
 export default {
-  components: {
-    Collage,
-  },
+  components: {},
   setup() {
     return {};
   },
@@ -139,23 +170,6 @@ export default {
 <style scoped lang="scss">
 .image {
   max-width: 200px;
-}
-
-.simple {
-  transition: all 0.25s ease;
-}
-.simple:hover,
-.simple:focus {
-  background-color: white;
-}
-
-.raise {
-  transition: all 0.25s ease;
-}
-.raise:hover,
-.raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em #000;
-  transform: translateY(-0.25em);
 }
 
 @mixin btn-border-drawing(

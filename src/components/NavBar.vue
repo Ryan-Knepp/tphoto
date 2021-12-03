@@ -5,7 +5,7 @@
     >
       <!-- Desktop -->
       <g-link to="/" class="mx-auto">
-        <g-image
+        <img
           src="../assets/images/logo.png"
           alt="T Photography home"
           width="64"
@@ -30,7 +30,7 @@
             <g-link to="/contact/" class="desktop_item">Contact</g-link>
           </li>
           <li class="ml-2 pl-4 py-4 pr-2">
-            <Button />
+            <BookButton />
           </li>
         </ul>
       </nav>
@@ -40,7 +40,7 @@
       <g-link to="/" class="flex-grow self-center">
         <g-image src="../assets/images/logo.png" width="64" height="64" />
       </g-link>
-      <Button addClass="my-4 mr-16" />
+      <BookButton addClass="my-4 mr-16" />
       <button @click="onMenuClick" :class="`nav__trigger pt-3 mr-3`">
         <span class="nav__icon"></span>
       </button>
@@ -70,10 +70,10 @@
 </template>
 
 <script>
-import Button from "../components/Button.vue";
+import BookButton from "./BookButton.vue";
 export default {
   components: {
-    Button,
+    BookButton,
   },
   data() {
     return {

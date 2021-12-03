@@ -55,9 +55,9 @@
           </li>
         </ul>
         <ul class="flex flex-col text-md uppercase">
-          <li class="py-2">
+          <!-- <li class="py-2">
             <g-link to="/blog/">Blog</g-link>
-          </li>
+          </li> -->
           <li class="py-2">
             <g-link to="/contact/">Contact</g-link>
           </li>

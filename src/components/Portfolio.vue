@@ -20,7 +20,7 @@
     </div>
     <silent-box :gallery="selectedGroup" ref="silentbox">
       <template v-slot:silentbox-item
-        ><div class="hidden" />
+        ><div class="hidden invisible" />
       </template>
     </silent-box>
   </section>
