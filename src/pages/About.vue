@@ -187,18 +187,36 @@ export default {};
 }
 
 .rainbox-text {
-  background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
+  animation: rainbox 8s infinite alternate;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@keyframes rainbox {
+  0% {
+    background-color: #e6261f;
+  }
+  14% {
+    background-color: #eb7532;
+  }
+  28% {
+    background-color: #f7d038;
+  }
+  43% {
+    background-color: #a3e048;
+  }
+  57% {
+    background-color: #49da9a;
+  }
+  71% {
+    background-color: #34bbe6;
+  }
+  86% {
+    background-color: #4355db;
+  }
+  100% {
+    background-color: #d23be7;
+  }
 }
 </style>
