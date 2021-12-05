@@ -106,7 +106,7 @@
         </div>
         <div class="flex flex-col md:my-3">
           <h2 class="text-xl lg:text-3xl px-2 pt-1 self-center">
-            Newborn Series
+            Newborn Session
           </h2>
           <p class="pt-4 self-center text-center text-md lg:text-xl">
             starting at $300
@@ -135,7 +135,7 @@
         </div>
         <div class="flex flex-col md:my-3">
           <h2 class="text-xl lg:text-3xl px-2 pt-1 self-center">
-            Senior Series
+            Senior Session
           </h2>
           <p class="pt-4 self-center text-center text-md lg:text-xl">
             starting at $350

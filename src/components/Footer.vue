@@ -6,7 +6,7 @@
       <ul class="flex gap-4 items-center pr-4 mx-auto md:mx-0">
         <li class="py-2">
           <a
-            href="https://www.facebook.com/tphotography"
+            href="https://www.facebook.com/tarynphotography"
             target="_blank"
             class="flex gap-2 items-center"
             rel="noopener noreferrer"
@@ -17,7 +17,7 @@
         </li>
         <li class="py-2">
           <a
-            href="https://www.instagram.com/tphotography"
+            href="http://www.instagram.com/taryn.photography/"
             target="_blank"
             class="flex gap-2 items-center"
             rel="noopener noreferrer"
