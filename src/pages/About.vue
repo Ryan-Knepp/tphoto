@@ -2,23 +2,36 @@
   <Layout>
     <div class="main-container font-main">
       <div class="grid grid-cols-1 md:grid-cols-2 text-justify mb-4">
-        <div class="mx-8 order-last md:order-first md:pt-12">
+        <article
+          class="prose-sm md:prose mx-8 order-last md:order-first md:pt-12"
+        >
           <h1 class="flex flex-col items-center mt-8 mb-4">
-            <span class="text-4xl font-cursive">Meet Taryn</span>
+            <span class="text-4xl font-cursive text-t-dark-pink"
+              >Meet Taryn</span
+            >
           </h1>
-          <p class="text-lg leading-relaxed flex-grow md:pt-8">
-            When I’m not wielding my camera capturing moments of my own kids, I
-            can be found sipping iced coffee (I vacillate between iced mochas
-            and iced miels). Or I could be petting one of two household cats 😀
-            If you know personality type stuff, I’m an ENFP (Myers-Briggs) and a
-            4w3 (Enneagram), which basically means I’m bursting with
-            <span class="rainbox-text font-bold">color</span>,
-            <span class="font-cursive">creativity</span>,
-            <span class="font-thin">emotion</span>, &
-            <span class="font-typewriter">expression…</span>
+          <p class="text-lg leading-relaxed md:pt-8">
+            When I’m not
+            <span class="font-bold">wielding my camera</span> capturing moments
+            of my own kids, I can be found
+            <span class="font-bold">sipping iced coffee</span> (I vacillate
+            between iced mochas and iced miels). Or I could be petting one of
+            <span class="font-bold">two household cats</span> 😀 If you know
+            personality type stuff, I’m an
+            <span class="font-bold">ENFP</span> (Myers-Briggs) and a
+            <span class="font-bold">4w3</span> (Enneagram), which basically
+            means I’m bursting with
+          </p>
+          <ul class="uppercase my-4">
+            <li class="rainbox-text font-bold">color</li>
+            <li class="font-cursive">creativity</li>
+            <li class="font-thin">emotion</li>
+            <li class="font-typewriter">expression...</li>
+          </ul>
+          <p class="text-xl leading-relaxed font-bold">
             which all work in your favor to get personality-packed photos!
           </p>
-        </div>
+        </article>
         <g-image
           class="object-scale-down"
           src="../assets/images/aboutme/about1.jpg"
@@ -33,40 +46,55 @@
           src="../assets/images/aboutme/about2.jpg"
           alt="Taryn with her kids"
         />
-        <div class="self-center mx-8">
-          <p class="pb-2">You want some updated pics of your kids...</p>
-          <p class="pb-2">Struggling to figure out how to make it happen?</p>
-          <p class="pb-2">
-            Of course you are! You’re busy! Stuff like this gets put on the
-            backburner, because there are more important things right in front
-            of you… like relationships, your kids’ needs, your grocery list,
-            your 78 loads of laundry, etc!
+        <article class="prose-sm md:prose self-center mx-8">
+          <p class="">
+            You want some <span class="font-bold">updated pics</span> of your
+            kids...
           </p>
+          <p class="">
+            <span class="font-bold">Struggling</span> to figure out how to make
+            it happen?
+          </p>
+          <p class="">
+            Of course you are! <span class="font-bold">You’re busy!</span> Stuff
+            like this gets put on the backburner, because there are more
+            important things right in front of you like…
+          </p>
+          <ul class="font-bold leading-loose">
+            <li>Relationships</li>
+            <li>Kids’ needs</li>
+            <li>Grocery list</li>
+            <li>78 loads of laundry</li>
+            <li>etc!</li>
+          </ul>
           <p>
             Not to mention, you’ve done this before-- booked a photographer,
             paid the money, gotten the kids looking adorable for the session,
-            only to have them misbehave during pictures & only end up with a
-            couple of pictures you actually like. Which you now have to spend
-            MORE time & money on in order to get prints made to display in your
-            home.
+            only to have them <span class="font-bold">misbehave</span> during
+            pictures & only end up with a couple of pictures you actually like.
+            Which you now have to
+            <span class="font-bold">
+              spend MORE time & money
+            </span>
+            on in order to get prints made to display in your home.
           </p>
-        </div>
+        </article>
       </div>
-      <div class="wrapper-3 mx-8">
+      <div class="sm:mx-8">
         <div class="relative">
           <g-image
             class="image object-scale-down"
             src="../assets/images/aboutme/about3.jpg"
             alt="Taryn taking photos"
           />
-          <div
-            class="text-block text-lg leading-relaxed mx-auto py-6 px-8 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
+          <article
+            class="prose-sm md:prose text-block text-lg leading-relaxed mx-auto py-6 px-8 sm:py-10 sm:px-12 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
           >
-            <p class="pb-2">
+            <p class="">
               Listen-- my job is to make it super simple for you. When we work
               together, you’ll get:
             </p>
-            <ul class="list-disc list-inside pb-2">
+            <ul class="black-bullets">
               <li>
                 <span class="font-bold">Guidance for your session</span>,
                 including a free tips & outfit guide to help you prepare
@@ -94,7 +122,7 @@
               want, because it’s what I want, too when I look for a
               photographer!
             </p>
-          </div>
+          </article>
         </div>
       </div>
       <div class="text-center mb-8">
@@ -116,8 +144,16 @@ export default {};
 .wrapper {
   max-height: 780px;
 }
+
+.black-bullets {
+  --tw-prose-bullets: #374151;
+  li::before {
+    background-color: #374151;
+  }
+}
+
 .text-block {
-  max-width: 65ch;
+  max-width: calc(65ch + 6rem);
 }
 @mixin btn-border-drawing(
   $color: #ccc,
