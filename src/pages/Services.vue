@@ -10,7 +10,11 @@
           <li>
             Working with your schedule to come up with the best time for photos
           </li>
-          <li>Providing an outfits & tips guide to prep for your session</li>
+          <li>
+            Providing an
+            <a href="/guides/style-guide.pdf">outfits & tips guide</a> to prep
+            for your session
+          </li>
           <li>
             Offering quick & efficient picture-taking (I often have clients tell
             me “Wow, that wasn’t as bad as I thought it was going to be” after

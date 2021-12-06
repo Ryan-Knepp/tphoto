@@ -37,7 +37,7 @@
           </p>
         </article>
         <g-link
-          href="/services/"
+          to="/services/"
           class="fancy text-xl px-6 py-2 self-center no-underline focus:outline-none focus:ring-offset-2"
           >I Want Treasured Photographs</g-link
         >
@@ -71,6 +71,72 @@
     </section>
     <Testimonials />
     <Portfolio />
+    <section class="main-container font-main">
+      <div class="hidden sm:flex">
+        <g-image
+          src="../assets/images/subscribe.jpeg"
+          class="w-1/2 object-scale-down"
+        />
+        <div class="pl-2 self-center flex flex-col inset-y-1/4 right-0 z-10 w-1/2">
+          <article class="prose-sm md:prose">
+            <h2 class="font-cursive text-start font-bold">
+              Let's Stay in Touch!
+            </h2>
+            <p>
+              Subscribe to my E-mail List and be the first one to know about
+              <ul>
+                <li>special deals</li>
+                <li>limited sessions</li>
+                <li>booking releases</li>
+                <li>and more!</li>
+              </ul>
+            </p>
+          </article>
+          <a
+            href="https://mailchi.mp/80888ae5e05a/sign-up-for-e-mails"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="fancy text-xl mt-8 px-6 py-2 self-start no-underline focus:outline-none focus:ring-offset-2"
+            >Yes, Please!
+          </a>
+        </div>
+      </div>
+      <div class="sm:hidden flex flex-col">
+        <h2 class="font-cursive text-xl text-center font-bold">
+          Let's Stay in Touch!
+        </h2>
+        <div class="flex">
+          <g-image
+            src="../assets/images/subscribe.jpeg"
+            class="w-1/2 object-scale-down"
+          />
+          <div class="pl-2 self-center flex flex-col inset-y-1/4 right-0 z-10 w-1/2">
+            <article class="prose-sm md:prose">
+              <p>
+                Subscribe to my E-mail List and be the first one to know about
+                <ul>
+                  <li>special deals</li>
+                  <li>limited sessions</li>
+                  <li>booking releases</li>
+                  <li>and more!</li>
+                </ul>
+              </p>
+            </article>
+          </div>
+        </div>
+        <a
+          href="https://mailchi.mp/80888ae5e05a/sign-up-for-e-mails"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="fancy text-xl mt-2 px-6 py-2 self-center no-underline focus:outline-none focus:ring-offset-2"
+          >Yes, Please!
+        </a>
+      </div>
+      <g-image
+        src="../assets/graphics/brown_dots.png"
+        class="sm:h-20 sm:-translate-y-20 transform md:h-32 md:-translate-y-32 object-scale-down"
+      />
+    </section>
   </Layout>
 </template>
 
@@ -86,14 +152,6 @@ export default {
 <style scoped lang="scss">
 .link {
   display: inline-block;
-  /* background: linear-gradient(
-    90deg,
-    rgba(246, 188, 177, 1) 0%,
-    rgba(239, 174, 155, 1) 66%,
-    rgba(226, 146, 113, 1) 100%
-  );
-  background-clip: text;
-  color: rgba(0, 0, 0, 0.2); */
   background: linear-gradient(
     180deg,
     rgba(246, 188, 177, 0) 0%,
@@ -181,5 +239,9 @@ export default {
 
 .fancy {
   @include btn-border-drawing(black, #e29271, 2px, bottom, right);
+}
+
+.subscribe {
+  max-height: 700px;
 }
 </style>

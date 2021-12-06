@@ -97,7 +97,9 @@
             <ul class="black-bullets">
               <li>
                 <span class="font-bold">Guidance for your session</span>,
-                including a free tips & outfit guide to help you prepare
+                including a free
+                <a href="/guides/style-guide.pdf">tips & outfit guide</a> to
+                help you prepare
               </li>
               <li>
                 <span class="font-bold">A quick & efficient photo session</span
