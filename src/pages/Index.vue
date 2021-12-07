@@ -125,7 +125,7 @@
           </div>
         </div>
         <a
-          href="https://mailchi.mp/80888ae5e05a/sign-up-for-e-mails"
+          href="https://mailchi.mp/hey/40s8adv3k6"
           target="_blank"
           rel="noopener noreferrer"
           class="fancy text-xl mt-2 px-6 py-2 self-center no-underline focus:outline-none focus:ring-offset-2"
