@@ -77,20 +77,22 @@
           src="../assets/images/subscribe.jpeg"
           class="w-1/2 object-scale-down"
         />
-        <div class="pl-2 self-center flex flex-col inset-y-1/4 right-0 z-10 w-1/2">
+        <div
+          class="pl-2 self-center flex flex-col inset-y-1/4 right-0 z-10 w-1/2"
+        >
           <article class="prose-sm md:prose">
             <h2 class="font-cursive text-start font-bold">
               Let's Stay in Touch!
             </h2>
             <p>
               Subscribe to my E-mail List and be the first one to know about
-              <ul>
-                <li>special deals</li>
-                <li>limited sessions</li>
-                <li>booking releases</li>
-                <li>and more!</li>
-              </ul>
             </p>
+            <ul>
+              <li>special deals</li>
+              <li>limited sessions</li>
+              <li>booking releases</li>
+              <li>and more!</li>
+            </ul>
           </article>
           <a
             href="https://mailchi.mp/hey/40s8adv3k6"
@@ -110,17 +112,19 @@
             src="../assets/images/subscribe.jpeg"
             class="w-1/2 object-scale-down"
           />
-          <div class="pl-2 self-center flex flex-col inset-y-1/4 right-0 z-10 w-1/2">
+          <div
+            class="pl-2 self-center flex flex-col inset-y-1/4 right-0 z-10 w-1/2"
+          >
             <article class="prose-sm md:prose">
               <p>
                 Subscribe to my E-mail List and be the first one to know about
-                <ul>
-                  <li>special deals</li>
-                  <li>limited sessions</li>
-                  <li>booking releases</li>
-                  <li>and more!</li>
-                </ul>
               </p>
+              <ul>
+                <li>special deals</li>
+                <li>limited sessions</li>
+                <li>booking releases</li>
+                <li>and more!</li>
+              </ul>
             </article>
           </div>
         </div>
@@ -146,7 +150,7 @@ import Testimonials from "../components/Testimonials.vue";
 import Collage from "../components/Collage.vue";
 export default {
   metaInfo: {
-    title: 'Cental IL Children & Family Photography'
+    title: "Cental IL Children & Family Photography",
   },
   components: { Portfolio, Testimonials, Collage },
 };
