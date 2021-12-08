@@ -3,14 +3,14 @@
     <div class="main-container font-main">
       <div class="grid grid-cols-1 md:grid-cols-2 text-justify mb-4">
         <article
-          class="prose-sm md:prose mx-8 order-last md:order-first md:pt-12"
+          class="prose-sm md:prose mx-2 order-last md:order-first md:pt-12"
         >
           <h1 class="flex flex-col items-center mt-8 mb-4">
             <span class="text-4xl font-cursive text-t-dark-pink"
               >Meet Taryn</span
             >
           </h1>
-          <p class="text-lg leading-relaxed md:pt-8">
+          <p class="leading-relaxed md:pt-8">
             When I’m not
             <span class="font-bold">wielding my camera</span> capturing moments
             of my own kids, I can be found
@@ -39,14 +39,14 @@
         />
       </div>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 text-justify text-lg leading-relaxed mb-4"
+        class="grid grid-cols-1 md:grid-cols-2 text-justify leading-relaxed mb-4"
       >
         <g-image
           class="object-scale-down"
           src="../assets/images/aboutme/about2.jpg"
           alt="Taryn with her kids"
         />
-        <article class="prose-sm md:prose self-center mx-8">
+        <article class="prose-sm md:prose self-center mx-2">
           <p class="">
             You want some <span class="font-bold">updated pics</span> of your
             kids...
@@ -88,7 +88,7 @@
             alt="Taryn taking photos"
           />
           <article
-            class="prose-sm md:prose text-block text-lg leading-relaxed mx-auto py-6 px-8 sm:py-10 sm:px-12 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
+            class="prose-sm md:prose text-block leading-relaxed mx-auto py-6 px-8 sm:py-10 sm:px-12 flex flex-col justify-center bg-t-pink transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12"
           >
             <p class="">
               Listen-- my job is to make it super simple for you. When we work

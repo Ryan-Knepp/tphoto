@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="main-container font-main flex gap-4">
-      <article class="prose-sm md:prose mx-4 lg:w-1/2">
+      <article class="prose-sm md:prose mx-2 lg:w-1/2">
         <h1>
           I’ll help you get those pictures packed with personality in no time at
           all, by...
