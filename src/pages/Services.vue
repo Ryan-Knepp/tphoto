@@ -166,6 +166,9 @@
 
 <script>
 export default {
+  metaInfo: {
+    title: "Photo Sessions",
+  },
   components: {},
   setup() {
     return {};

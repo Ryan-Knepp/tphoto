@@ -141,7 +141,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  metaInfo: {
+    title: "Meet Taryn",
+  },
+};
 </script>
 
 <style scoped lang="scss">

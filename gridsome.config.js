@@ -1,4 +1,8 @@
 module.exports = {
+  siteName: "T Photography",
+  siteUrl: "https://taryn.photography",
+  siteDescription:
+    "Taryn offers newborn, children, senior, and family photography in the central Illinois area.",
   icon: {
     favicon: "./src/assets/images/logo.png",
   },

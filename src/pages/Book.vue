@@ -39,6 +39,9 @@ import { createWidget } from "@typeform/embed";
 import "@typeform/embed/build/css/widget.css";
 
 export default {
+  metaInfo: {
+    title: "Book a Session",
+  },
   data: () => {
     return {
       isLoaded: false,

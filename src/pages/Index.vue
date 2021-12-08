@@ -145,6 +145,9 @@ import Portfolio from "../components/Portfolio.vue";
 import Testimonials from "../components/Testimonials.vue";
 import Collage from "../components/Collage.vue";
 export default {
+  metaInfo: {
+    title: 'Cental IL Children & Family Photography'
+  },
   components: { Portfolio, Testimonials, Collage },
 };
 </script>
