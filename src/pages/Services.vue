@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="main-container font-main flex gap-4">
-      <article class="prose-sm md:prose lg:w-1/2">
+      <article class="prose-sm md:prose mx-4 lg:w-1/2">
         <h1>
           I’ll help you get those pictures packed with personality in no time at
           all, by...
@@ -12,8 +12,10 @@
           </li>
           <li>
             Providing an
-            <a href="/guides/style-guide.pdf">outfits & tips guide</a> to prep
-            for your session
+            <a href="/guides/style-guide.pdf" class="underline"
+              >outfits & tips guide</a
+            >
+            to prep for your session
           </li>
           <li>
             Offering quick & efficient picture-taking (I often have clients tell

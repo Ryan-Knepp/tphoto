@@ -48,20 +48,20 @@
         </ul>
         <ul class="flex flex-col text-md uppercase">
           <li class="py-2">
-            <g-link to="/portfolio/">Portfolio</g-link>
-          </li>
-          <li class="py-2">
             <g-link to="/services/">Investment</g-link>
           </li>
-        </ul>
-        <ul class="flex flex-col text-md uppercase">
-          <!-- <li class="py-2">
-            <g-link to="/blog/">Blog</g-link>
-          </li> -->
           <li class="py-2">
             <g-link to="/contact/">Contact</g-link>
           </li>
         </ul>
+        <!-- <ul class="flex flex-col text-md uppercase">
+          <li class="py-2">
+            <g-link to="/blog/">Blog</g-link>
+          </li>
+          <li class="py-2">
+            <g-link to="/portfolio/">Portfolio</g-link>
+          </li>
+        </ul> -->
       </div>
     </div>
     <p class="flex justify-center mt-4 text-xs sm:text-sm md:text-base">

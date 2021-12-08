@@ -98,8 +98,10 @@
               <li>
                 <span class="font-bold">Guidance for your session</span>,
                 including a free
-                <a href="/guides/style-guide.pdf">tips & outfit guide</a> to
-                help you prepare
+                <a href="/guides/style-guide.pdf" class="underline"
+                  >tips & outfit guide</a
+                >
+                to help you prepare
               </li>
               <li>
                 <span class="font-bold">A quick & efficient photo session</span

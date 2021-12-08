@@ -49,19 +49,30 @@
       >
         <ul class="nav__list flex flex-col items-center text-2xl divide-y-2">
           <li class="nav__item nav_item-1 py-4">
-            <g-link to="/" class="nav__link">Home</g-link>
+            <g-link to="/" class="nav__link" @click.native="onMenuClick"
+              >Home</g-link
+            >
           </li>
           <li class="nav__item nav_item-2 py-4">
-            <g-link to="/about/" class="nav__link">About</g-link>
+            <g-link to="/about/" class="nav__link" @click.native="onMenuClick"
+              >About</g-link
+            >
           </li>
           <li class="nav__item nav_item-3 py-4">
-            <g-link to="/services/" class="nav__link">Investment</g-link>
+            <g-link
+              to="/services/"
+              class="nav__link"
+              @click.native="onMenuClick"
+              >Investment</g-link
+            >
           </li>
           <!-- <li class="nav__item nav__item-4 my-4">
-          <g-link to="/blog/" class="nav__link">Blog</g-link>
+          <g-link to="/blog/" class="nav__link" @click.native="onMenuClick">Blog</g-link>
         </li> -->
           <li class="nav__item nav_item-4 py-4">
-            <g-link to="/contact/" class="nav__link">Contact</g-link>
+            <g-link to="/contact/" class="nav__link" @click.native="onMenuClick"
+              >Contact</g-link
+            >
           </li>
         </ul>
       </nav>
