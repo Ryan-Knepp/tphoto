@@ -75,6 +75,7 @@
       <div class="hidden sm:flex">
         <g-image
           src="../assets/images/subscribe.jpeg"
+          alt="Taryn with flowers"
           class="w-1/2 object-scale-down"
         />
         <div
@@ -110,6 +111,7 @@
         <div class="flex">
           <g-image
             src="../assets/images/subscribe.jpeg"
+            alt="Taryn with flowers"
             class="w-1/2 object-scale-down"
           />
           <div
@@ -138,6 +140,7 @@
       </div>
       <g-image
         src="../assets/graphics/brown_dots.png"
+        alt=""
         class="sm:h-20 sm:-translate-y-20 transform md:h-32 md:-translate-y-32 object-scale-down"
       />
     </section>

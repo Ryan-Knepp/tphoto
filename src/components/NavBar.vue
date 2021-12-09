@@ -38,10 +38,19 @@
     <!-- Mobile with menu -->
     <header :class="`lg:hidden flex ${menuOpen ? 'nav--active' : ''}`">
       <g-link to="/" class="flex-grow self-center">
-        <g-image src="../assets/images/logo.png" width="64" height="64" />
+        <g-image
+          src="../assets/images/logo.png"
+          alt="T Photography home"
+          width="64"
+          height="64"
+        />
       </g-link>
       <BookButton addClass="my-4 mr-16" />
-      <button @click="onMenuClick" :class="`nav__trigger pt-3 mr-3`">
+      <button
+        aria-label="Open Menu"
+        @click="onMenuClick"
+        :class="`nav__trigger pt-3 mr-3`"
+      >
         <span class="nav__icon"></span>
       </button>
       <nav
