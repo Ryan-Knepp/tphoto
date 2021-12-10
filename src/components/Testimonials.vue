@@ -109,7 +109,7 @@ export default {
       testimonials: [
         {
           title: "- Leah",
-          quote: `"You've been PERFECTLY captioning our family since 5 days after Jean was
+          quote: `"You've been PERFECTLY capturing our family since 5 days after Jean was
           born!!! God has BLESSED US to have your dear friendship! THESE ARE SO
           AMAZING! TIMELESS! I CAN'T EVEN FIND WORDS! OHHH MY GOODNESS!!!"`,
           positioning: STANDARD_POSITIONING_RIGHT,
